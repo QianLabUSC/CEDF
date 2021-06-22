@@ -1,0 +1,118 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Repeat the experiment on several other dunes, with different grain sizes. "
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": { "value": "Yes" },
+        "evenly-space": { "value": "Yes" },
+        "consistent-reason": { "value": "I took 3.  That is the smallest number that allows me to avoid/detect odd outliers. " },
+        "evenly-space-reason": { "value": "I was looking for the point of break in slope, and I didn't have any idea a priori what soil moisture that would happen at, nor where on the stoss slope that moisture value would be. " },
+        "p1-support": { "value": "No" },
+        "p1-confidence": { "value": "Moderately confident in this conclusion" },
+        "p2-support": { "value": "Yes" },
+        "p2-confidence": { "value": "Slightly confident in this conclusion" },
+        "p3-support": { "value": "Yes" },
+        "p3-confidence": { "value": "Slightly confident in this conclusion" },
+        "p4-support": { "value": "No" },
+        "p4-confidence": { "value": "Slightly confident in this conclusion" },
+        "age": { "value": "65" },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "education": { "value": "Professional" },
+        "years-of-practice": { "value": "38" },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-position": { "value": "Emeritus" },
+        "identification": {
+            "value": "other",
+            "reason": "geoscience education researcher"
+        },
+        "geoscience-specialization": { "value": "geoscience education research" }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 255,
+            "normOffsetY": 64.59999084472656,
+            "roc": "I don't have enough information to make a confidence judgment"
+        },
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 329,
+            "normOffsetY": 81.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 5,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 419,
+            "normOffsetY": 93.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 520,
+            "normOffsetY": 121.59999084472656,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 616,
+            "normOffsetY": 149.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 712,
+            "normOffsetY": 193.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 800,
+            "normOffsetY": 252.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 877.1999816894531,
+            "normOffsetY": 293.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 931.1999816894531,
+            "normOffsetY": 295.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"Not at all confident the data supports the hypothesis\",\"I don’t have enough information to make a confidence judgment\",\"I don’t have enough information to make a confidence judgment\",\"Not at all confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\"],\"rows\":[{\"index\":0,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":255,\"normOffsetY\":64.59999084472656,\"isHovered\":false},{\"index\":2,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":329,\"normOffsetY\":81.59999084472656,\"isHovered\":false},{\"index\":5,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":419,\"normOffsetY\":93.59999084472656,\"isHovered\":false},{\"index\":8,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":520,\"normOffsetY\":121.59999084472656,\"isHovered\":false},{\"index\":11,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":616,\"normOffsetY\":149.59999084472656,\"isHovered\":false},{\"index\":14,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":712,\"normOffsetY\":193.59999084472656,\"isHovered\":false},{\"index\":17,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":800,\"normOffsetY\":252.59999084472656,\"isHovered\":false},{\"index\":19,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":877.1999816894531,\"normOffsetY\":293.59999084472656,\"isHovered\":false},{\"index\":21,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":931.1999816894531,\"normOffsetY\":295.59999084472656,\"isHovered\":false}],\"currentIndex\":9,\"concludeQuestions\":{\"support\":\"Yes\",\"confidence\":\"Moderately confident in my conclusion\",\"improve\":\"Repeat the experiment on several other dunes, with different grain sizes. \"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":true}"
+}

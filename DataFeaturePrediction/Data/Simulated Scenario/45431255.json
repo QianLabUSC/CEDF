@@ -1,0 +1,118 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "n/a"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": { "value": "Yes" },
+        "evenly-space": { "value": "No" },
+        "consistent-reason": { "value": "5 is sufficiently high enough to be sure the trend over transect was stable" },
+        "evenly-space-reason": { "value": "if I understand correctly, the interdune area is wetter so I expect most change to happen here. I sampled less densely at crest where its dry" },
+        "p1-support": { "value": "Yes" },
+        "p1-confidence": { "value": "Moderately confident in this conclusion" },
+        "p2-support": { "value": "No" },
+        "p2-confidence": { "value": "Not at all confident in this conclusion" },
+        "p3-support": { "value": "Yes" },
+        "p3-confidence": { "value": "Very confident in this conclusion" },
+        "p4-support": { "value": "No" },
+        "p4-confidence": { "value": "Moderately confident in this conclusion" },
+        "age": { "value": ""},
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "education": { "value": "Postdoctoral" },
+        "years-of-practice": { "value": "10" },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "I have been to white sands"
+        },
+        "academia-position": { "value": "Postdoctoral" },
+        "identification": {
+            "value": "Computational Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": { "value": "geochemistry/geophysics" }
+    },
+    "rows": [
+        {
+            "index": 21,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 936,
+            "normOffsetY": 295.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 19,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 867,
+            "normOffsetY": 295.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 17,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 804,
+            "normOffsetY": 250.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 15,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 742,
+            "normOffsetY": 213.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 686,
+            "normOffsetY": 181.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 635,
+            "normOffsetY": 158.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 581,
+            "normOffsetY": 138.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 5,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 421.1999816894531,
+            "normOffsetY": 93.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 242.19998168945312,
+            "normOffsetY": 72.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"I don’t have enough information to make a confidence judgment\",\"I don’t have enough information to make a confidence judgment\",\"I don’t have enough information to make a confidence judgment\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\"],\"rows\":[{\"index\":21,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":936,\"normOffsetY\":295.59999084472656},{\"index\":19,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":867,\"normOffsetY\":295.59999084472656},{\"index\":17,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":804,\"normOffsetY\":250.59999084472656},{\"index\":15,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":742,\"normOffsetY\":213.59999084472656},{\"index\":13,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":686,\"normOffsetY\":181.59999084472656},{\"index\":12,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":635,\"normOffsetY\":158.59999084472656},{\"index\":10,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":581,\"normOffsetY\":138.59999084472656},{\"index\":5,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":421.1999816894531,\"normOffsetY\":93.59999084472656},{\"index\":0,\"measurements\":5,\"type\":\"normal\",\"normOffsetX\":242.19998168945312,\"normOffsetY\":72.59999084472656}],\"currentIndex\":9,\"concludeQuestions\":{\"support\":\"Yes\",\"confidence\":\"Very confident in my conclusion\",\"improve\":\"n/a\"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":false}"
+}

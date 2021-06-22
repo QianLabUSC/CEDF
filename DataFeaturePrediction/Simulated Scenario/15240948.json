@@ -1,0 +1,94 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": { "value": "Yes" },
+        "evenly-space": { "value": "Yes" },
+        "consistent-reason": { "value": "minimum number to have a sense that results can be dubplicated" },
+        "evenly-space-reason": { "value": "Didn't have any prior knowledge of where boundaries might be." },
+        "p1-support": { "value": "Yes" },
+        "p1-confidence": { "value": "Very confident in this conclusion" },
+        "p2-support": { "value": "Yes" },
+        "p2-confidence": { "value": "Very confident in this conclusion" },
+        "p3-support": { "value": "Yes" },
+        "p3-confidence": { "value": "Very confident in this conclusion" },
+        "p4-support": { "value": "Yes" },
+        "p4-confidence": { "value": "Very confident in this conclusion" },
+        "age": { "value": "64" },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "education": { "value": "Professional" },
+        "years-of-practice": { "value": "43" },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "dunes, water table, sand, porosity, permeability, shear strength, cohesion of sand and its effect on shear strength"
+        },
+        "academia-position": { "value": "Emeritus" },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": { "value": "structural geology" }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 240,
+            "normOffsetY": 71.59999084472656,
+            "roc": "I don't have enough information to make a confidence judgment"
+        },
+        {
+            "index": 5,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 407,
+            "normOffsetY": 91.59999084472656,
+            "roc": "I don’t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 552,
+            "normOffsetY": 129.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 700,
+            "normOffsetY": 191.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 800,
+            "normOffsetY": 248.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 866,
+            "normOffsetY": 295.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"Slightly confident the data supports the hypothesis\",\"I don’t have enough information to make a confidence judgment\",\"Moderately confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\"],\"rows\":[{\"index\":0,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":240,\"normOffsetY\":71.59999084472656,\"isHovered\":false},{\"index\":5,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":407,\"normOffsetY\":91.59999084472656},{\"index\":9,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":552,\"normOffsetY\":129.59999084472656},{\"index\":14,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":700,\"normOffsetY\":191.59999084472656,\"isHovered\":false},{\"index\":17,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":800,\"normOffsetY\":248.59999084472656,\"isHovered\":false},{\"index\":19,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":866,\"normOffsetY\":295.59999084472656}],\"currentIndex\":6,\"concludeQuestions\":{\"support\":\"Yes\",\"confidence\":\"Very confident in my conclusion\",\"improve\":\"N/A\"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":false}"
+}
