@@ -1,0 +1,123 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Very confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "I took  because that is generally a good compromise between speed and reproducibility"
+        },
+        "evenly-space-reason": {
+            "value": "Because I don't know that much about dunes, and I assumed moisture would increase linearly with distance away from the dune crest."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "40"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "18"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Petrology"
+        },
+        "academia-position": {
+            "value": "Adjunct"
+        }
+    },
+    "rows": [
+        {
+            "index": 5,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 416.35810666095523,
+            "normOffsetY": 88.00171342899979,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 549.4606982223174,
+            "normOffsetY": 128.70250588991217,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 679.2632255300921,
+            "normOffsetY": 184.80359820089956,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 626.4621974726922,
+            "normOffsetY": 158.4030841721996,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 494.45962732919253,
+            "normOffsetY": 112.20218462197472,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ]
+}

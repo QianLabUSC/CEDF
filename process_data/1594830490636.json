@@ -1,0 +1,131 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "Collecting more data would increase my confidence in the conclusion"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "3 measurements was enough to get a sense of the variability without being too costly"
+        },
+        "evenly-space-reason": {
+            "value": "I evenly spaced the sampling locations to get a sense for how the soil moisture changed moving along the stoss slope. That information helped me pick an additional sample site."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "29"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "8"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Hydrology"
+        },
+        "academia-position": {
+            "value": "Postdoctoral"
+        }
+    },
+    "rows": [
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 329.73142000428356,
+            "normOffsetY": 78.10152066823731,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 467.23409723709574,
+            "normOffsetY": 103.40201327907475,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 617.9370314842579,
+            "normOffsetY": 155.10301991861212,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 773.04005140287,
+            "normOffsetY": 238.70464767616193,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 20,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 889.6423216962947,
+            "normOffsetY": 288.2056114799743,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 557.4358535018205,
+            "normOffsetY": 133.10259156136217,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

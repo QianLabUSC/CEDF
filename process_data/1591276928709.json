@@ -1,0 +1,259 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Statistical analysis; Sample additional dune profiles (from this location); sample additional dune profiles for other dune fields in/with different climates, elevations, compositions, grain sizes, dune sizes, etc; sample orthogonal transect of dune(s); sample vertical transect of undercut (leeward) side of dune; take an infinite number of samples from an entire dune to generate a 3D model of shear strength vs moisture (if funding and time allows)"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "allows for discarding of outliers/erroneous measurements; was also considering time/cost (although I don't think either was mentioned previously, so I made several assumptions about the 2)"
+        },
+        "evenly-space-reason": {
+            "value": "Didn't matter much - as long as samples were spaced close enough to capture changes in shear strength vs moisture. Although consistency of methodology is important for studies."
+        },
+        "p1-support": {
+            "value": "No"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "No"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "24"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "2"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Fluvial sedimentology"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 809.8907689012636,
+            "normOffsetY": 259.60505461554936,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 753.7896765902763,
+            "normOffsetY": 225.50439066181195,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 698.7886056971514,
+            "normOffsetY": 194.70379096166204,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 643.7875348040266,
+            "normOffsetY": 170.50331976868708,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 11,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 596.4866138359391,
+            "normOffsetY": 147.40286999357465,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 552.4857571214393,
+            "normOffsetY": 130.9025487256372,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 509.5849218248019,
+            "normOffsetY": 116.60227029342471,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 452.383808095952,
+            "normOffsetY": 101.20197044334975,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 5,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 406.1829085457271,
+            "normOffsetY": 90.20175626472478,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 364.38209466695224,
+            "normOffsetY": 83.60162775754979,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 313.50610409081173,
+            "normOffsetY": 78.10152066823731,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 278.30541871921184,
+            "normOffsetY": 75.90147783251231,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 240.9046905118869,
+            "normOffsetY": 67.10130648961234,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 805.2156778753481,
+            "normOffsetY": 259.60505461554936,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 744.7144998929107,
+            "normOffsetY": 226.60441207967446,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 740.3144142214607,
+            "normOffsetY": 224.40436924394945,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 690.8134504176484,
+            "normOffsetY": 191.40372670807454,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 640.2124651959734,
+            "normOffsetY": 169.4032983508246,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 594.0115656457485,
+            "normOffsetY": 149.60291282929964,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 499.40972370957377,
+            "normOffsetY": 116.60227029342471,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 448.8087384878989,
+            "normOffsetY": 103.40201327907475,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 100,
+            "type": "deviate",
+            "normOffsetX": 358.6069822231741,
+            "normOffsetY": 83.60162775754979,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

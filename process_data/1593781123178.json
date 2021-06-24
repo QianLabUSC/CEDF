@@ -1,0 +1,109 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "need to take into account the meaesurement incertainties"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "2"
+        },
+        "evenly-space-reason": {
+            "value": "no spatial bias"
+        },
+        "p1-support": {
+            "value": "No"
+        },
+        "p1-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "28"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "3"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Others",
+            "reason": "Geologist"
+        },
+        "familiarity": {},
+        "academia-or-industry": {},
+        "identification": {},
+        "geoscience-specialization": {}
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 240.90126422155126,
+            "normOffsetY": 70.40036945287342,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 396.002078172413,
+            "normOffsetY": 84.70044449798834,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 541.2028401689645,
+            "normOffsetY": 125.4006580879308,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 689.7036194836194,
+            "normOffsetY": 189.20099290459734,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 839.3044045709754,
+            "normOffsetY": 277.2014547206891,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

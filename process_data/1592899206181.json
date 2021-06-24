@@ -1,0 +1,105 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Slightly confident in my conclusion",
+        "improve": "more data points from different dunes"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "No"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "depper it is the more sample are recorded"
+        },
+        "evenly-space-reason": {
+            "value": "not sure"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "32"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "17"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Other",
+            "reason": "unemployed"
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "organic geochemistry"
+        },
+        "academia-position": {}
+    },
+    "rows": [
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 694.6536454607744,
+            "normOffsetY": 188.10098713189618,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 9,
+            "type": "normal",
+            "normOffsetX": 329.4517289239936,
+            "normOffsetY": 81.4004271798849,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 547.2528719188208,
+            "normOffsetY": 124.30065231522964,
+            "roc": "Slightly confident the data supports the hypothesis"
+        }
+    ]
+}

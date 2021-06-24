@@ -1,0 +1,131 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "5 gives you a good number of comparison  "
+        },
+        "evenly-space-reason": {
+            "value": "so you can sample every main point on the stoss "
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "No"
+        },
+        "p3-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "21"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "No"
+        },
+        "years-of-undergraduate": {
+            "value": "2"
+        },
+        "undergraduate-major": {
+            "value": "Geology "
+        },
+        "undergraduate-minor": {
+            "value": "-"
+        }
+    },
+    "rows": [
+        {
+            "index": 13,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 662.2128935532234,
+            "normOffsetY": 173.80338402227457,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 784.3152709359606,
+            "normOffsetY": 242.00471192974942,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 559.9109016920112,
+            "normOffsetY": 132.00257014349967,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 453.2088241593489,
+            "normOffsetY": 100.10194902548726,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 355.3069179695866,
+            "normOffsetY": 80.3015635039623,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 254.10494752623688,
+            "normOffsetY": 67.10130648961234,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 325.6063396872992,
+            "normOffsetY": 78.10152066823731,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 526.9102591561362,
+            "normOffsetY": 119.9023345470122,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

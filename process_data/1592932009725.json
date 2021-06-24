@@ -1,0 +1,99 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "No"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "This was the most efficient strategy for sampling a large area."
+        },
+        "evenly-space-reason": {
+            "value": "This is the most representative sampling strategy."
+        },
+        "p1-support": {
+            "value": "No"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "No"
+        },
+        "p3-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "37"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "10"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "I have sampled dunes before."
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Geomorphology"
+        },
+        "academia-position": {
+            "value": "Assistant Professor"
+        }
+    },
+    "rows": [
+        {
+            "index": 18,
+            "measurements": 100,
+            "type": "normal",
+            "normOffsetX": 811.2657956735918,
+            "normOffsetY": 270.6052687941743,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 542.8605697151424,
+            "normOffsetY": 134.20261297922468,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ]
+}

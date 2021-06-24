@@ -1,0 +1,219 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "I put 7 because that is the optimal number for Fischer statistics"
+        },
+        "evenly-space-reason": {
+            "value": "Seemed like a good strategy to begin with (I have no experience with sampling dunes)"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "32"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "10"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Paleomagnetism"
+        },
+        "academia-position": {
+            "value": "Postdoctoral"
+        }
+    },
+    "rows": [
+        {
+            "index": 19,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 848.1044507525845,
+            "normOffsetY": 287.1015066749994,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 17,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 787.6041332540215,
+            "normOffsetY": 244.2012815396547,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 16,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 746.903919664079,
+            "normOffsetY": 221.1011603129306,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 14,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 704.0036945287343,
+            "normOffsetY": 198.0010390862065,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 666.6034982568953,
+            "normOffsetY": 177.1009294048847,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 627.0032904396539,
+            "normOffsetY": 159.50083704166636,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 10,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 585.2030710770103,
+            "normOffsetY": 141.900744678448,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 542.3028459416656,
+            "normOffsetY": 126.50066386063193,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 8,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 504.9026496698266,
+            "normOffsetY": 115.50060613362047,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 471.90247648879216,
+            "normOffsetY": 105.60055417931014,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 437.8022975350566,
+            "normOffsetY": 95.70050222499981,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 398.2020897178153,
+            "normOffsetY": 90.20047336149408,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 359.9768891164504,
+            "normOffsetY": 81.4004271798849,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 326.976715935416,
+            "normOffsetY": 79.2004156344826,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 293.9765427543816,
+            "normOffsetY": 73.70038677097686,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 262.07637534604834,
+            "normOffsetY": 70.40036945287342,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 7,
+            "type": "normal",
+            "normOffsetX": 240.07625989202538,
+            "normOffsetY": 71.50037522557457,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Sample on the slip face and in the interdune area.  Determine the source of the measurement variability.  Sample in a grid pattern instead of a linear traverse."
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "I was as concerned about the repeatability of RHex's sampling procedure as the sampling strategy itself.  \"3\" measurements removes the \"coin-flip\" aspect but shouldn't slow down the entire traverse/sampling process too much.  "
+        },
+        "evenly-space-reason": {
+            "value": "I anticipate graphing or modeling the results.  My graphing/mapping software likes to model uniformly spaced samples."
+        },
+        "p1-support": {
+            "value": "No"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "71"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "33"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "Sampling traverse/graphical presentation of results.  Measurement repeatability testing."
+        },
+        "academia-or-industry": {
+            "value": "Other",
+            "reason": "Government Research"
+        },
+        "identification": {
+            "value": "other",
+            "reason": "A mix of all three"
+        },
+        "geoscience-specialization": {
+            "value": "Applied Sedimentology"
+        }
+    },
+    "rows": [
+        {
+            "index": 18,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 840.4044103436765,
+            "normOffsetY": 278.30146049339027,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 787.6041332540215,
+            "normOffsetY": 239.8012584488501,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 15,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 731.503838846263,
+            "normOffsetY": 207.90109104051683,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 676.5035502112056,
+            "normOffsetY": 178.20093517758585,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 621.5032615761482,
+            "normOffsetY": 152.90080240545947,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 555.5029152140794,
+            "normOffsetY": 124.30065231522964,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 484.0025399885048,
+            "normOffsetY": 104.50054840660898,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 5,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 413.6021705356314,
+            "normOffsetY": 85.80045027068948,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 334.40175490114876,
+            "normOffsetY": 73.70038677097686,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 240.90126422155126,
+            "normOffsetY": 66.00034636206884,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

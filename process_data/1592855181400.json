@@ -1,0 +1,122 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Very confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "for a minimum of statistical reliability"
+        },
+        "evenly-space-reason": {
+            "value": "to observe rates of changing of moisture and  shear strenght in space"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "41"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "10"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "earthquake geology"
+        },
+        "academia-position": {
+            "value": "Associate Professor"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 257.40501177982435,
+            "normOffsetY": 52.80102805739987,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 514.8100235596487,
+            "normOffsetY": 110.00214178624974,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 694.1135146712359,
+            "normOffsetY": 184.80359820089956,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 20,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 893.2173913043479,
+            "normOffsetY": 279.4054401370743,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 849.2165345898479,
+            "normOffsetY": 283.8055258085243
+        }
+    ]
+}

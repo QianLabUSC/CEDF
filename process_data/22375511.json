@@ -1,0 +1,224 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Slightly confident in my conclusion",
+        "improve": "does this pattern of data appear on other transects"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "3 is minimum for statistical average"
+        },
+        "evenly-space-reason": {
+            "value": "capture big changes"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "52"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "education": {
+            "value": "Professional"
+        },
+        "years-of-practice": {
+            "value": "25"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-position": {
+            "value": "Full Professor"
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "tectonics"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 252,
+            "normOffsetY": 74.59999084472656,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 382,
+            "normOffsetY": 89.59999084472656,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 528,
+            "normOffsetY": 123.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 672,
+            "normOffsetY": 175.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 793,
+            "normOffsetY": 249.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 937,
+            "normOffsetY": 301.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 502.1999816894531,
+            "normOffsetY": 116.20001220703125,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 476.1999816894531,
+            "normOffsetY": 108.60000610351562,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 645.1999816894531,
+            "normOffsetY": 166.60000610351562,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 750.1999816894531,
+            "normOffsetY": 220.60000610351562,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 20,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 908.1999816894531,
+            "normOffsetY": 299.79998779296875,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 518.1999816894531,
+            "normOffsetY": 114.59999084472656,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 570.1999816894531,
+            "normOffsetY": 129,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 532.1999816894531,
+            "normOffsetY": 111.5999755859375,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 528.1999816894531,
+            "normOffsetY": 112,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 20,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 895.1999816894531,
+            "normOffsetY": 300.79998779296875,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 936.1999816894531,
+            "normOffsetY": 295.3999938964844,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 440.1999816894531,
+            "normOffsetY": 99,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"I don\u2019t have enough information to make a confidence judgment\",\"I don\u2019t have enough information to make a confidence judgment\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\"],\"rows\":[{\"index\":0,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":252,\"normOffsetY\":74.59999084472656,\"isHovered\":false},{\"index\":4,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":382,\"normOffsetY\":89.59999084472656,\"isHovered\":false},{\"index\":9,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":528,\"normOffsetY\":123.59999084472656,\"isHovered\":false},{\"index\":13,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":672,\"normOffsetY\":175.59999084472656,\"isHovered\":false},{\"index\":17,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":793,\"normOffsetY\":249.59999084472656,\"isHovered\":false},{\"index\":21,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":937,\"normOffsetY\":301.59999084472656,\"isHovered\":false},{\"index\":8,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":502.1999816894531,\"normOffsetY\":116.20001220703125,\"isHovered\":false},{\"index\":7,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":476.1999816894531,\"normOffsetY\":108.60000610351562,\"isHovered\":false},{\"index\":12,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":645.1999816894531,\"normOffsetY\":166.60000610351562},{\"index\":16,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":750.1999816894531,\"normOffsetY\":220.60000610351562,\"isHovered\":false},{\"index\":20,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":908.1999816894531,\"normOffsetY\":299.79998779296875,\"isHovered\":false},{\"index\":8,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":518.1999816894531,\"normOffsetY\":114.59999084472656,\"isHovered\":false},{\"index\":10,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":570.1999816894531,\"normOffsetY\":129},{\"index\":9,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":532.1999816894531,\"normOffsetY\":111.5999755859375,\"isHovered\":false},{\"index\":8,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":528.1999816894531,\"normOffsetY\":112},{\"index\":20,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":895.1999816894531,\"normOffsetY\":300.79998779296875},{\"index\":21,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":936.1999816894531,\"normOffsetY\":295.3999938964844},{\"index\":6,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":440.1999816894531,\"normOffsetY\":99}],\"currentIndex\":18,\"concludeQuestions\":{\"support\":\"No\",\"confidence\":\"Slightly confident in my conclusion\",\"improve\":\"does this pattern of data appear on other transects\"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":true}"
+}

@@ -1,0 +1,179 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "Tests on another dune"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Not sure"
+        },
+        "evenly-space-reason": {
+            "value": "because the relationship between moisture shear strength and distance from crest might be linear at first order"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "25"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "3"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "shear strenght"
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Computational Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Geormorphology and Remote Sensing"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 3,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 368.232169629471,
+            "normOffsetY": 82.5016063396873,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 298.93082030413365,
+            "normOffsetY": 74.80145641464982,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 483.7344185050332,
+            "normOffsetY": 110.00214178624974,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 604.7367744699079,
+            "normOffsetY": 152.90297708288713,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 697.1385735703577,
+            "normOffsetY": 192.50374812593702,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 791.7404155065325,
+            "normOffsetY": 249.70486185478688,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 435.33347611908334,
+            "normOffsetY": 97.90190618976226,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 561.539437751004,
+            "normOffsetY": 135.0563453815261,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 534.0374297188755,
+            "normOffsetY": 124.33056224899599,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 658.3465060240964,
+            "normOffsetY": 176.85939759036145,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 741.9526104417671,
+            "normOffsetY": 218.3874297188755,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 784.8557429718876,
+            "normOffsetY": 245.889437751004,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

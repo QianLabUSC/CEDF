@@ -1,0 +1,168 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Sample more dunes"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "No"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Made an initial judgement call as to where i would see a change and therefore where increased data would make more difference"
+        },
+        "evenly-space-reason": {
+            "value": "to quickly bracket the key changes"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "38"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "16"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Industry",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "petrology/geochemistry"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 263.4551295780681,
+            "normOffsetY": 71.50139216106233,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 5,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 413.05804240736774,
+            "normOffsetY": 92.40179910044978,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 554.9608053116299,
+            "normOffsetY": 129.80252730777468,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 686.9633754551296,
+            "normOffsetY": 185.90361961876204,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 791.4654101520669,
+            "normOffsetY": 247.5048190190619,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 944.368387234954,
+            "normOffsetY": 289.3056328978368,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 316.25615763546796,
+            "normOffsetY": 75.90147783251231,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 384.45748554294283,
+            "normOffsetY": 84.7016491754123,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 470.2591561362176,
+            "normOffsetY": 106.70207753266224,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 243.65474405654317,
+            "normOffsetY": 68.20132790747483,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 525.2602270293424,
+            "normOffsetY": 123.2023988005997,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

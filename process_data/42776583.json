@@ -1,0 +1,208 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "I am confident in the overall relationship, but given unlimited experimental resources and time I would sample the roll-over in the curve more between 2 and 6% moisture content to nail down the relationship in this critical area.  Would make modeling more robust later on."
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "No"
+        },
+        "consistent-reason": {
+            "value": "Initially I didn't understand that you could sample more than once per location, so I picked just 1 per each.  The experimenter explained this to me and then I changed my sampling strategy to 2 per location to get a rough handle on variance.  Ideally you'd do 3 or more to really nail down the variance, but that is a second order problem relative to nailing down the overall trend, which was the first-order problem."
+        },
+        "evenly-space-reason": {
+            "value": "I expected steep gradients in moisture especially at the beginning, and suspected there may be some later as well, so I short spaced the sampling at the crest and interdune interface.  Turns out really just the crest to central stoss slope was needed, but it was all valuable.  The ultimate strategy was actually pretty even as I filled in holes to make sure I was seeing a real trend through the variance in individual samples."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "51"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "education": {
+            "value": "Professional"
+        },
+        "years-of-practice": {
+            "value": "25"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "I've spent a lot of time in sand dunes and have looked at moisture/shear strength profiles informally, in undergraduate teaching settings.  Early on I was also a big fan of Bagnold's work and actually read Physics of Blown Sand and Desert Dunes (his book) for fun.  Geek, I know..."
+        },
+        "academia-position": {
+            "value": "Associate Professor"
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Geoscience education research"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 241,
+            "normOffsetY": 71.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 285,
+            "normOffsetY": 75.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 328,
+            "normOffsetY": 78.59999084472656,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 1,
+            "type": "normal",
+            "normOffsetX": 468,
+            "normOffsetY": 103.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 1,
+            "type": "discarded",
+            "normOffsetX": 672,
+            "normOffsetY": 176.59999084472656,
+            "roc": null
+        },
+        {
+            "index": 17,
+            "measurements": 1,
+            "type": "discarded",
+            "normOffsetX": 806,
+            "normOffsetY": 251.59999084472656,
+            "roc": null
+        },
+        {
+            "index": 19,
+            "measurements": 1,
+            "type": "discarded",
+            "normOffsetX": 852,
+            "normOffsetY": 281.59999084472656,
+            "roc": null
+        },
+        {
+            "index": 20,
+            "measurements": 1,
+            "type": "discarded",
+            "normOffsetX": 908.1999816894531,
+            "normOffsetY": 297.59999084472656,
+            "roc": null
+        },
+        {
+            "index": 4,
+            "measurements": 1,
+            "type": "deviate",
+            "normOffsetX": 387.1999816894531,
+            "normOffsetY": 82.79998779296875,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 440.1999816894531,
+            "normOffsetY": 100.60000610351562,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 667.1999816894531,
+            "normOffsetY": 174.39999389648438,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 581.1999816894531,
+            "normOffsetY": 137.39999389648438,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 636.1999816894531,
+            "normOffsetY": 162.79998779296875,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 536.1999816894531,
+            "normOffsetY": 123.79998779296875,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 790.1999816894531,
+            "normOffsetY": 240.8000030517578,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 20,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 893.1999816894531,
+            "normOffsetY": 295.79998779296875,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\"],\"rows\":[{\"index\":0,\"measurements\":1,\"type\":\"normal\",\"normOffsetX\":241,\"normOffsetY\":71.59999084472656,\"isHovered\":false},{\"index\":1,\"measurements\":1,\"type\":\"normal\",\"normOffsetX\":285,\"normOffsetY\":75.59999084472656,\"isHovered\":false},{\"index\":2,\"measurements\":1,\"type\":\"normal\",\"normOffsetX\":328,\"normOffsetY\":78.59999084472656,\"isHovered\":false},{\"index\":7,\"measurements\":1,\"type\":\"normal\",\"normOffsetX\":468,\"normOffsetY\":103.59999084472656,\"isHovered\":false},{\"index\":13,\"measurements\":1,\"type\":\"discarded\",\"normOffsetX\":672,\"normOffsetY\":176.59999084472656,\"isHovered\":false},{\"index\":17,\"measurements\":1,\"type\":\"discarded\",\"normOffsetX\":806,\"normOffsetY\":251.59999084472656,\"isHovered\":false},{\"index\":19,\"measurements\":1,\"type\":\"discarded\",\"normOffsetX\":852,\"normOffsetY\":281.59999084472656,\"isHovered\":false},{\"index\":20,\"measurements\":1,\"type\":\"discarded\",\"normOffsetX\":908.1999816894531,\"normOffsetY\":297.59999084472656,\"isHovered\":false},{\"index\":4,\"measurements\":1,\"type\":\"deviate\",\"normOffsetX\":387.1999816894531,\"normOffsetY\":82.79998779296875,\"isHovered\":false},{\"index\":6,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":440.1999816894531,\"normOffsetY\":100.60000610351562},{\"index\":13,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":667.1999816894531,\"normOffsetY\":174.39999389648438,\"isHovered\":false},{\"index\":10,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":581.1999816894531,\"normOffsetY\":137.39999389648438,\"isHovered\":false},{\"index\":12,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":636.1999816894531,\"normOffsetY\":162.79998779296875,\"isHovered\":false},{\"index\":9,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":536.1999816894531,\"normOffsetY\":123.79998779296875},{\"index\":17,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":790.1999816894531,\"normOffsetY\":240.8000030517578,\"isHovered\":false},{\"index\":20,\"measurements\":2,\"type\":\"deviate\",\"normOffsetX\":893.1999816894531,\"normOffsetY\":295.79998779296875}],\"currentIndex\":16,\"concludeQuestions\":{\"support\":\"Yes\",\"confidence\":\"Very confident in my conclusion\",\"improve\":\"I am confident in the overall relationship, but given unlimited experimental resources and time I would sample the roll-over in the curve more between 2 and 6% moisture content to nail down the relationship in this critical area.  Would make modeling more robust later on.\"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":false}"
+}

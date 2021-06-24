@@ -1,0 +1,139 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "repeat experiment on multiple transects"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "When sampling, I like to take at least 4 samples to avoid strong bias from an outlier. 2 samples--no way to know if one is an outlier. 3 samples--maybe you can determine an outlier. 4 samples--probably you can determine an outlier. "
+        },
+        "evenly-space-reason": {
+            "value": "Evenly spacing the samples along the whole transect increases the likelihood of capturing any transitional areas and may reduce bias (random sampling is sometimes appropriate, but may lead to samples being concentrated in one area)."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "28"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "6"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "while not my primary area of research, I am a geomorphologist, so the shear stress/soil moisture relationship is foundational for me."
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Geomorphology, active tectonics"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 239.8046690940244,
+            "normOffsetY": 67.10130648961234,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 334.40651103019917,
+            "normOffsetY": 79.2015420860998,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 435.6084814735489,
+            "normOffsetY": 96.80188477189976,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 534.6104090811737,
+            "normOffsetY": 125.4024416363247,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 635.8123795245234,
+            "normOffsetY": 163.9031912615121,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 731.5142428785607,
+            "normOffsetY": 213.4041550653245,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 4,
+            "type": "normal",
+            "normOffsetX": 833.816234739773,
+            "normOffsetY": 277.2053973013493,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

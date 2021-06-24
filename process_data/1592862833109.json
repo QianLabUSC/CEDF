@@ -1,0 +1,136 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "I would but certainly need more measurements on different dunes and in different deserts to see if the observation is repeatable, given the fact that the hypothesis is very general.Also it would be good to need some numerical models and other type of tests, to investigate if there is another type of control different than moisture that I am not taking in account. "
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "No"
+        },
+        "consistent-reason": {
+            "value": "I took 20 measurement on each site to have an statistically valid population (I may need less but I am not very familiar with the measurement and errors so I did 20, looking at the range and dispersion of data at each point, the number of samples taken seems fine)."
+        },
+        "evenly-space-reason": {
+            "value": "I tried to sample more as the slope increased (tried to keep a vertical spacing constant)"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "45"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "20"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "Familiar with eolian depositional systems,not expert knowledge or experience sampling dunes "
+        },
+        "academia-or-industry": {
+            "value": "Industry",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Structural Geology"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 251.07988862711503,
+            "normOffsetY": 70.40137074319983,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 5,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 419.3831655600771,
+            "normOffsetY": 90.20175626472478,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 583.2863568215892,
+            "normOffsetY": 140.80274148639967,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 693.288498607839,
+            "normOffsetY": 188.10366245448705,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 840.6913686014136,
+            "normOffsetY": 280.5054615549368,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 771.3900192760763,
+            "normOffsetY": 235.40458342257443,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 916.5928464339258,
+            "normOffsetY": 286.0055686442493,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

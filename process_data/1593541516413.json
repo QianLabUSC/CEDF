@@ -1,0 +1,139 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "I would sample more dunes. We just sampled the one."
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "I took duplicates. I did this to qualitatively look for consistency among measurements at each site, while balancing cost/time associated with replicate samples."
+        },
+        "evenly-space-reason": {
+            "value": "I had no sense of what the shape of the moisture profile might look, so sampling consistently and assuming a linear profile until saturation seemed reasonable."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "31"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "10"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Hydrodynamics"
+        },
+        "academia-position": {
+            "value": "Assistant Professor"
+        }
+    },
+    "rows": [
+        {
+            "index": 1,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 276.10537588348683,
+            "normOffsetY": 72.60141357892482,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 5,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 423.5082458770615,
+            "normOffsetY": 96.80188477189976,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 10,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 576.4112229599486,
+            "normOffsetY": 141.90276290426215,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 746.9145427286356,
+            "normOffsetY": 222.20432640822446,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 2,
+            "type": "normal",
+            "normOffsetX": 848.1165131719854,
+            "normOffsetY": 290.4056543156993,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 522.7851788391519,
+            "normOffsetY": 123.2023988005997,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 2,
+            "type": "deviate",
+            "normOffsetX": 694.3885200257014,
+            "normOffsetY": 195.80381237952452,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

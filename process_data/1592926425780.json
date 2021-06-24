@@ -1,0 +1,115 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Very confident in my conclusion",
+        "improve": "N/A"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "i have choose 10 sample at each location because could be enough measurements for an appreciable statistical analysis "
+        },
+        "evenly-space-reason": {
+            "value": "i choose 4 different sampling sites at the most (maybe) characteristics locations. "
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "27"
+        },
+        "gender": {
+            "value": "male",
+            "reason": "T-REX a cui piaggiono galline "
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "4"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "paleomagnetism"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 251.90132194856272,
+            "normOffsetY": 61.600323271264244,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 525.8027593511484,
+            "normOffsetY": 116.6006119063216,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 811.8042602534467,
+            "normOffsetY": 261.801373902873,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 21,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 943.8049529775843,
+            "normOffsetY": 284.90149512959715,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

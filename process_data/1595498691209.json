@@ -1,0 +1,269 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Very confident in my conclusion",
+        "improve": "repeat; more sampling"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "20 replicates provided confidence, but still is manageable."
+        },
+        "evenly-space-reason": {
+            "value": "The 5 m increments were used to provide an initial profile.  Return sampling at 5 m intervals were spaced between the initial profile points to provide additional data.   "
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "53"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "14"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Others",
+            "reason": "middle school teacher (14 yrs), marine science undergrad"
+        },
+        "familiarity": {},
+        "academia-or-industry": {},
+        "identification": {},
+        "geoscience-specialization": {}
+    },
+    "rows": [
+        {
+            "index": 19,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 851.9665881345041,
+            "normOffsetY": 281.60548297279934,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 16,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 780.4651959734418,
+            "normOffsetY": 237.60462625829942,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 15,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 716.663953737417,
+            "normOffsetY": 203.503962304562,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 661.6628828442921,
+            "normOffsetY": 172.7033626044121,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 11,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 618.7620475476548,
+            "normOffsetY": 154.0029985007496,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 572.5611479974299,
+            "normOffsetY": 135.30263439708716,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 529.6603127007925,
+            "normOffsetY": 122.1023773827372,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 482.3593917327051,
+            "normOffsetY": 105.60205611479974,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 439.7335617905333,
+            "normOffsetY": 92.40179910044978,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 389.13257656885844,
+            "normOffsetY": 83.60162775754979,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 339.63161276504604,
+            "normOffsetY": 79.2015420860998,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 300.0308417219961,
+            "normOffsetY": 71.50139216106233,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 257.1300064253588,
+            "normOffsetY": 69.30134932533733,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 241.72970657528379,
+            "normOffsetY": 67.10130648961234,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 1,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 283.53052045405866,
+            "normOffsetY": 66.00128507174983,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 369.3321910473335,
+            "normOffsetY": 78.10152066823731,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 5,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 434.2334547012208,
+            "normOffsetY": 90.20175626472478,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 482.6343970871707,
+            "normOffsetY": 97.90190618976226,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 529.9353180552581,
+            "normOffsetY": 113.30220603983723,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 572.8361533518955,
+            "normOffsetY": 129.80252730777468,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 619.0370529021204,
+            "normOffsetY": 147.40286999357465,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 663.0379096166203,
+            "normOffsetY": 167.20325551509958,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 716.9389590918827,
+            "normOffsetY": 195.80381237952452,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 777.44013707432,
+            "normOffsetY": 232.10451916898694,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 20,
+            "type": "normal",
+            "normOffsetX": 842.3414007282073,
+            "normOffsetY": 272.80531162989934,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Increase number of measurements per location."
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "I chose ten because I wanted to capture the maximum about of variability."
+        },
+        "evenly-space-reason": {
+            "value": "To accurately reflect the change over a given distance."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "18"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "No"
+        },
+        "years-of-undergraduate": {
+            "value": "0"
+        },
+        "undergraduate-major": {
+            "value": "Geology"
+        },
+        "undergraduate-minor": {
+            "value": "Biology"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 245.02977082887128,
+            "normOffsetY": 69.30134932533733,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 2,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 308.8310130648961,
+            "normOffsetY": 79.2015420860998,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 389.13257656885844,
+            "normOffsetY": 86.90169201113729,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 7,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 473.8342257442707,
+            "normOffsetY": 103.40201327907475,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 543.1355750696081,
+            "normOffsetY": 129.80252730777468,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 622.3371171557079,
+            "normOffsetY": 157.3030627543371,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 694.9385307346326,
+            "normOffsetY": 190.30370529021204,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 751.03962304562,
+            "normOffsetY": 223.30434782608697,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 793.9404583422574,
+            "normOffsetY": 253.00492610837438,
+            "roc": null
+        },
+        {
+            "index": 18,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 837.6663097022918,
+            "normOffsetY": 281.60548297279934,
+            "roc": null
+        },
+        {
+            "index": 11,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 609.9618762047547,
+            "normOffsetY": 154.0029985007496,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 593.4615549368173,
+            "normOffsetY": 148.50289141143713,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 739.7644035125295,
+            "normOffsetY": 217.80424073677446,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 835.4662668665667,
+            "normOffsetY": 279.4054401370743,
+            "roc": "Very confident the data supports the hypothesis"
+        }
+    ]
+}

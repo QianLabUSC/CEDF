@@ -1,0 +1,187 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Not at all confident in my conclusion",
+        "improve": "determine saturated moisture content"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "to capture variance"
+        },
+        "evenly-space-reason": {
+            "value": "because i had no data to indicate a different strategy"
+        },
+        "p1-support": {
+            "value": "No"
+        },
+        "p1-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "No"
+        },
+        "p3-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "age": {
+            "value": "72"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "51"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "field sampling of sediment properties"
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "geomorphology"
+        },
+        "academia-position": {
+            "value": "Emeritus"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 242.00471192974942,
+            "normOffsetY": 63.80124223602485,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 1,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 302.5058899121868,
+            "normOffsetY": 72.60141357892482,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 376.2073249089741,
+            "normOffsetY": 85.80167059327479,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 6,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 444.4086528164489,
+            "normOffsetY": 99.00192760762476,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 8,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 499.40972370957377,
+            "normOffsetY": 114.40222745769972,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 10,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 558.8108802741486,
+            "normOffsetY": 130.9025487256372,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 625.9121867637609,
+            "normOffsetY": 155.10301991861212,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 684.2133219104734,
+            "normOffsetY": 182.60355536517454,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 16,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 749.1145855643607,
+            "normOffsetY": 215.60419790104947,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 17,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 806.3156992932105,
+            "normOffsetY": 251.9049046905119,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 19,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 856.9166845148854,
+            "normOffsetY": 287.1055900621118,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 21,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 919.6179053330478,
+            "normOffsetY": 286.0055686442493,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 20,
+            "measurements": 50,
+            "type": "normal",
+            "normOffsetX": 901.1925465838509,
+            "normOffsetY": 288.2056114799743,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

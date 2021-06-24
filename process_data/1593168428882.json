@@ -1,0 +1,162 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "(A) Obtain Info in error if shear strength measures, (B) measure more data near the transition. Looks like softening occurs"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "No"
+        },
+        "consistent-reason": {
+            "value": "Economic reason. Gives a rough idea of error-related spread"
+        },
+        "evenly-space-reason": {
+            "value": "More points are needed near the transition of slopes. Point density should be function of change in curve slope. I guessed where you put the transition."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "45"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "20"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "Shear strength measures, poroelasticity"
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "other",
+            "reason": "Mix"
+        },
+        "geoscience-specialization": {
+            "value": "Structural geology "
+        },
+        "academia-position": {
+            "value": "Assistant Professor"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 248.44520547945206,
+            "normOffsetY": 62.111301369863014,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 2,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 315.50342465753425,
+            "normOffsetY": 76.95205479452055,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 389.1575342465753,
+            "normOffsetY": 90.14383561643835,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 434.22945205479454,
+            "normOffsetY": 100.03767123287672,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 484.79794520547944,
+            "normOffsetY": 112.13013698630137,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 528.7705479452055,
+            "normOffsetY": 125.32191780821918,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 10,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 581.5376712328767,
+            "normOffsetY": 147.3082191780822,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 13,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 654.0924657534247,
+            "normOffsetY": 180.2876712328767,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 756.3287671232877,
+            "normOffsetY": 229.7568493150685,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 833.2808219178082,
+            "normOffsetY": 281.4246575342466
+        }
+    ]
+}

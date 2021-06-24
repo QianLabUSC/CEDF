@@ -1,0 +1,139 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "More sample points in the small region of increase, and more samples per measurement in the 'constant' region to confirm that is it constant shear strength within variability"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Five seemed like a good start to test variability. I could always augment with more at each location as needed, but more than 5 would be a waste of effort for an initial test. After the first sample location, it seemed like 5 samples reflected the spread reasonably for a first pass. "
+        },
+        "evenly-space-reason": {
+            "value": "Without prior knowledge of where changes are located, an even spacing would best segment the study in regions needing further spatial sampling."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "age": {
+            "value": "27"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "4"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "Choosing station/sample locations to maximize return on science questions"
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Seismology"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 243.1047333476119,
+            "normOffsetY": 66.00128507174983,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 871.2169629470978,
+            "normOffsetY": 286.0055686442493,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 545.6106232597987,
+            "normOffsetY": 125.4024416363247,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 721.6140501177982,
+            "normOffsetY": 204.60398372242452,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 392.70764617691157,
+            "normOffsetY": 88.00171342899979,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 483.1293865832151,
+            "normOffsetY": 108.68210265681891,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 5,
+            "type": "deviate",
+            "normOffsetX": 444.6286369580277,
+            "normOffsetY": 100.76196859020267,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

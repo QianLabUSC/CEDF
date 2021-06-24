@@ -1,0 +1,224 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Slightly confident in my conclusion",
+        "improve": "Closer measurements and lower moisture sampling, nevertheless, the sand on top of the dune is been deposited while the sand on the bottom hasn't, so the initial theory is flawed anyway"
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "3 for statistical significance"
+        },
+        "evenly-space-reason": {
+            "value": "Easier interpolation, no weight at sampling points, easier field setup, wanted to get as close as possible and the graphic didn't allow for closer sampling"
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "Yes"
+        },
+        "p4-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "age": {
+            "value": "33"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "7"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am familiar with some features",
+            "reason": "Shear Module"
+        },
+        "academia-or-industry": {
+            "value": "Industry",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Geophysicist"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 244.2012815396547,
+            "normOffsetY": 60.5003174985631,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 1,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 292.6015355385052,
+            "normOffsetY": 64.90034058936769,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 3,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 344.3018068554591,
+            "normOffsetY": 73.70038677097686,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 394.90207239971187,
+            "normOffsetY": 84.70044449798834,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 440.00230908045893,
+            "normOffsetY": 93.50049067959752,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 7,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 495.0025977155163,
+            "normOffsetY": 110.00057727011473,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 537.902822850861,
+            "normOffsetY": 121.0006349971262,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 10,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 583.0030595316081,
+            "normOffsetY": 136.40071581494226,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 630.3033077577574,
+            "normOffsetY": 154.0008081781606,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 13,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 674.3035386658032,
+            "normOffsetY": 174.9009178594824,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 15,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 724.903804210056,
+            "normOffsetY": 198.0010390862065,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 773.3040582089066,
+            "normOffsetY": 227.7011949491375,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 18,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 816.2042833442513,
+            "normOffsetY": 257.4013508120685,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 19,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 864.6045373431017,
+            "normOffsetY": 282.7014835841948,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 20,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 908.6047682511477,
+            "normOffsetY": 284.90149512959715,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 242.27627143742768,
+            "normOffsetY": 61.600323271264244,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 1,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 287.37650811817474,
+            "normOffsetY": 63.80033481666654,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 241.17626566472654,
+            "normOffsetY": 67.10035213476998,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

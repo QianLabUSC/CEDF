@@ -1,0 +1,192 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Statistical analysis; Analyze a different dune"
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Three is the minimum, thus time effective, number of measurements, in my view, to check if the data are reproducible."
+        },
+        "evenly-space-reason": {
+            "value": "It gives to me a first idea of where I need to make sampling denser."
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "40"
+        },
+        "gender": {
+            "value": "male",
+            "reason": ""
+        },
+        "education": {
+            "value": "Professional"
+        },
+        "years-of-practice": {
+            "value": "16"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-position": {
+            "value": "Assistant Professor"
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Structural Geology"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 249,
+            "normOffsetY": 73.59999084472656,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 1,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 305,
+            "normOffsetY": 76.59999084472656,
+            "roc": "I don\u2019t have enough information to make a confidence judgment"
+        },
+        {
+            "index": 4,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 373,
+            "normOffsetY": 85.59999084472656,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 451,
+            "normOffsetY": 102.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 530,
+            "normOffsetY": 124.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 612,
+            "normOffsetY": 153.59999084472656,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 692,
+            "normOffsetY": 186.59999084472656,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 16,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 775.1999816894531,
+            "normOffsetY": 231.59999084472656,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 19,
+            "measurements": 3,
+            "type": "normal",
+            "normOffsetX": 867.1999816894531,
+            "normOffsetY": 293.59999084472656,
+            "roc": "Very confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 497.1999816894531,
+            "normOffsetY": 113.39999389648438,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 541.1999816894531,
+            "normOffsetY": 121.60000610351562,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 10,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 585.1999816894531,
+            "normOffsetY": 139.8000030517578,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 628.1999816894531,
+            "normOffsetY": 150.79998779296875,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 0,
+            "measurements": 3,
+            "type": "deviate",
+            "normOffsetX": 244.19998168945312,
+            "normOffsetY": 70.79998779296875,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ],
+    "raw": "{\"currentState\":3,\"showNOMInput\":false,\"roc\":[\"I don\u2019t have enough information to make a confidence judgment\",\"I don\u2019t have enough information to make a confidence judgment\",\"Not at all confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Slightly confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Very confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Moderately confident the data supports the hypothesis\",\"Not at all confident the data supports the hypothesis\"],\"rows\":[{\"index\":0,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":249,\"normOffsetY\":73.59999084472656,\"isHovered\":false},{\"index\":1,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":305,\"normOffsetY\":76.59999084472656,\"isHovered\":false},{\"index\":4,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":373,\"normOffsetY\":85.59999084472656,\"isHovered\":false},{\"index\":6,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":451,\"normOffsetY\":102.59999084472656,\"isHovered\":false},{\"index\":9,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":530,\"normOffsetY\":124.59999084472656,\"isHovered\":false},{\"index\":11,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":612,\"normOffsetY\":153.59999084472656,\"isHovered\":false},{\"index\":14,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":692,\"normOffsetY\":186.59999084472656,\"isHovered\":false},{\"index\":16,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":775.1999816894531,\"normOffsetY\":231.59999084472656,\"isHovered\":false},{\"index\":19,\"measurements\":3,\"type\":\"normal\",\"normOffsetX\":867.1999816894531,\"normOffsetY\":293.59999084472656},{\"index\":8,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":497.1999816894531,\"normOffsetY\":113.39999389648438,\"isHovered\":false},{\"index\":9,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":541.1999816894531,\"normOffsetY\":121.60000610351562,\"isHovered\":false},{\"index\":10,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":585.1999816894531,\"normOffsetY\":139.8000030517578,\"isHovered\":false},{\"index\":12,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":628.1999816894531,\"normOffsetY\":150.79998779296875,\"isHovered\":false},{\"index\":0,\"measurements\":3,\"type\":\"deviate\",\"normOffsetX\":244.19998168945312,\"normOffsetY\":70.79998779296875}],\"currentIndex\":14,\"concludeQuestions\":{\"support\":\"No\",\"confidence\":\"Moderately confident in my conclusion\",\"improve\":\"Statistical analysis; Analyze a different dune\"},\"lastHoverIndex\":-1,\"isAlternativeHypo\":true}"
+}

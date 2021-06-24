@@ -1,0 +1,152 @@
+{
+    "concludeQuestions": {
+        "support": "Yes",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "I would like to sample other locations to compare and contrast, or possibly changing the timing of the sampling."
+    },
+    "isAlternativeHypo": false,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Five seems like enough to get an OK average, but not overly labor-some. "
+        },
+        "evenly-space-reason": {
+            "value": "If you're too close together, it's a lot of data and time and if you're too far apart, there could be important information missing. If it's \"evenly\" space, you are more likely to capture the average data, and hopefully point out weird areas if present. "
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "Yes"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Slightly confident in this conclusion"
+        },
+        "age": {
+            "value": "28"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "6"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Other",
+            "reason": "Government"
+        },
+        "identification": {
+            "value": "Field Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Magnetics"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 239.8046690940244,
+            "normOffsetY": 69.30134932533733,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 319.00621118012424,
+            "normOffsetY": 75.90147783251231,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 4,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 385.00749625187404,
+            "normOffsetY": 86.90169201113729,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 7,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 477.40929535232385,
+            "normOffsetY": 106.70207753266224,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 557.7108588562861,
+            "normOffsetY": 130.9025487256372,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 12,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 635.8123795245234,
+            "normOffsetY": 160.6031270079246,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 14,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 712.8138787748983,
+            "normOffsetY": 200.20389805097452,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 17,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 782.1152281002356,
+            "normOffsetY": 242.00471192974942,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 5,
+            "type": "normal",
+            "normOffsetX": 839.3163418290854,
+            "normOffsetY": 281.60548297279934,
+            "roc": "Moderately confident the data supports the hypothesis"
+        }
+    ]
+}

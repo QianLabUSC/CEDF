@@ -1,0 +1,203 @@
+{
+    "concludeQuestions": {
+        "support": "No",
+        "confidence": "Moderately confident in my conclusion",
+        "improve": "Sample other dunes, sample continuously along the surface every 1/2 meter. "
+    },
+    "isAlternativeHypo": true,
+    "form": {
+        "consistent": {
+            "value": "Yes"
+        },
+        "evenly-space": {
+            "value": "Yes"
+        },
+        "consistent-reason": {
+            "value": "Tried to get enough that I could eyeball an \"average\" without being too influenced by outliers, while trying to be reasonable with no knowledge of how long a sample takes. "
+        },
+        "evenly-space-reason": {
+            "value": "To help visualize any changes and get efficient coverage of the entire dune. "
+        },
+        "p1-support": {
+            "value": "Yes"
+        },
+        "p1-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p2-support": {
+            "value": "No"
+        },
+        "p2-confidence": {
+            "value": "Moderately confident in this conclusion"
+        },
+        "p3-support": {
+            "value": "Yes"
+        },
+        "p3-confidence": {
+            "value": "Very confident in this conclusion"
+        },
+        "p4-support": {
+            "value": "No"
+        },
+        "p4-confidence": {
+            "value": "Not at all confident in this conclusion"
+        },
+        "age": {
+            "value": "25"
+        },
+        "gender": {
+            "value": "female",
+            "reason": ""
+        },
+        "if-bachelor": {
+            "value": "Yes"
+        },
+        "years-of-practice": {
+            "value": "1"
+        },
+        "geoscientist-or-psychologist": {
+            "value": "Geoscientist",
+            "reason": ""
+        },
+        "familiarity": {
+            "value": "I am not familiar with any features",
+            "reason": ""
+        },
+        "academia-or-industry": {
+            "value": "Academia",
+            "reason": ""
+        },
+        "identification": {
+            "value": "Lab Geoscientist",
+            "reason": ""
+        },
+        "geoscience-specialization": {
+            "value": "Structural Geology"
+        },
+        "academia-position": {
+            "value": "Graduate Students"
+        }
+    },
+    "rows": [
+        {
+            "index": 0,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 254.10494752623688,
+            "normOffsetY": 85.80167059327479,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 3,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 341.00663953737416,
+            "normOffsetY": 90.20175626472478,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 6,
+            "measurements": 10,
+            "type": "normal",
+            "normOffsetX": 446.60869565217394,
+            "normOffsetY": 111.10216320411223,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 9,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 546.7106446776612,
+            "normOffsetY": 141.90276290426215,
+            "roc": null
+        },
+        {
+            "index": 12,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 636.912400942386,
+            "normOffsetY": 180.40351252944956,
+            "roc": null
+        },
+        {
+            "index": 16,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 746.9145427286356,
+            "normOffsetY": 220.00428357249947,
+            "roc": null
+        },
+        {
+            "index": 18,
+            "measurements": 10,
+            "type": "discarded",
+            "normOffsetX": 829.416149068323,
+            "normOffsetY": 275.00535446562435,
+            "roc": null
+        },
+        {
+            "index": 5,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 407.007924609124,
+            "normOffsetY": 103.40201327907475,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 518.1100878132362,
+            "normOffsetY": 134.20261297922468,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 602.8117369886485,
+            "normOffsetY": 166.1032340972371,
+            "roc": "Slightly confident the data supports the hypothesis"
+        },
+        {
+            "index": 15,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 713.9139001927607,
+            "normOffsetY": 213.4041550653245,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 18,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 822.816020561148,
+            "normOffsetY": 278.30541871921184,
+            "roc": "Moderately confident the data supports the hypothesis"
+        },
+        {
+            "index": 2,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 312.40608267294925,
+            "normOffsetY": 90.20175626472478,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 8,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 499.40972370957377,
+            "normOffsetY": 127.6024844720497,
+            "roc": "Not at all confident the data supports the hypothesis"
+        },
+        {
+            "index": 11,
+            "measurements": 10,
+            "type": "deviate",
+            "normOffsetX": 590.711501392161,
+            "normOffsetY": 159.50310559006212,
+            "roc": "Not at all confident the data supports the hypothesis"
+        }
+    ]
+}
