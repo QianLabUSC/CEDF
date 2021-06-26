@@ -11,17 +11,26 @@ import json
 import os
 import argparse
 from argparse import RawTextHelpFormatter
+import scipy.io as scio
 
-###########################################
-# Load all user data to training data set #
-###########################################
 
-def save_data(user_data):
-    data_version = user_data['isAlternativeHypo']      # 0-the right 1-the wrong hypo
-    '''
-    save init template
-    '''
-    
+# load erodibility data from dataset      
+erodibility_data = scio.loadmat("erodibility_dataset.mat")
+print(erodibility_data)
+
+# Load all user data to training data set 
+# def save_data(user_id, user_data):
+#     '''
+#     save init template
+#     '''
+#     data_version = user_data['isAlternativeHypo']      # 0-the right 1-the wrong hypo
+#     for i in range(len(user_data['rows'])):
+#         step =  i
+#         if(i == 0):
+#             state =  
+#             action = 
+
+        
 
 
 def main(source_path):
@@ -31,12 +40,11 @@ def main(source_path):
         with open(source_path + i) as f:
             json_obj = json.load(f)
             jsondata_list.append(json_obj)
-    for i in jsondata_list:
-        save_data(i)  
+            save_data(i, json_obj)
     
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter)
     parser.add_argument('-s', dest='source_path', help="please specify your source scenario path with --src sourcepath")
     args = parser.parse_args()
-    main(args.source_path)
+    # main(args.source_path)
