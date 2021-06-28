@@ -15,9 +15,15 @@ import scipy.io as scio
 
 
 # load erodibility data from dataset      
-erodibility_data = scio.loadmat("erodibility_dataset.mat")
-print(erodibility_data)
-
+# erodibility_data = scio.loadmat("erodibility_dataset.mat")
+# tech_names = {'mm', 'y_H0', 'y_H1'}
+# raw_data = {key: value for key, value in erodibility_data.items() if key in tech_names}
+# raw_data['mm'] = raw_data['mm'].tolist()
+# raw_data['y_H0'] = raw_data['y_H0'].tolist()
+# raw_data['y_H1'] = raw_data['y_H1'].tolist()
+# print(type(raw_data))
+with open('raw_data.json', 'w') as f:
+    json.dump(raw_data, f, indent=4)
 # Load all user data to training data set 
 # def save_data(user_id, user_data):
 #     '''
