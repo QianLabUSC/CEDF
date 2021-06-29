@@ -23,11 +23,12 @@ class rule_state_machine:
         'Feature_high'])
         self.hypo_sample = 0
 
+
     def set_init_hypo(self, hypo_location, hypo_sample):
         self.hypo_location = hypo_location
         self.hypo_sample = hypo_sample
 
-    def set_initial_template(self):
+    def choose_initial_template(self):
         '''choose initial template
 
         According to the initial knowledge and hypothesis, human will select a
@@ -66,6 +67,5 @@ class rule_state_machine:
 
     def handle_information_coverage(self):
         
-
         
 

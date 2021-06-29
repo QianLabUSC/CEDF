@@ -10,7 +10,11 @@
 import json
 import os
 import argparse
+<<<<<<< HEAD
 from argparse import Action, RawTextHelpFormatter
+=======
+from argparse import RawTextHelpFormatter
+>>>>>>> a938275dc4d0de872bd9cd5a6b4ed99b58313d39
 import scipy.io as scio
 import numpy as np
 
