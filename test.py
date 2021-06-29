@@ -1,1 +1,0 @@
-print('test the ubuntu environment')

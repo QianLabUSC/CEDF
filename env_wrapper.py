@@ -8,11 +8,56 @@
 # Email: 1196075299@qq.com
 
 import json
+import os
+import argparse
+from argparse import Action, RawTextHelpFormatter
+import scipy.io as scio
+import numpy as np
 
-###########################################
-# Load all user data to training data set #
-###########################################
-class UserSets:
+class ENV:
     def __init__(self):
-        self.
-State_Action_Sets = []
+        # load erodibility data from dataset      
+        erodibility_data = scio.loadmat("erodibility_dataset.mat")
+        tech_names = {'mm', 'y_H0', 'y_H1'}
+        self.raw_data = ({key: value for key, value in erodibility_data.items()
+                          if key in tech_names})
+        # action/state includes [location index, samples in each index] 
+        # here is the initial templates
+        self.action = [[1,5,9,13,17,21], [3,3,3,3,3,3]]    
+        self.state = [[1,5,9,13,17,21], [3,3,3,3,3,3]]
+
+    def initiate_template(self, action):
+        self.action = action
+        self.state = action
+
+
+    def get_data_state(self):
+        # get the index of rows and cols
+        row_index = []
+        col_index = []
+        for i in range(len(self.state[0])):
+            for j in range(self.state[1][i]):
+                row_random = np.random.randint(1,22)
+                col_index.append(self.state[0][i])
+                row_index.append(row_random)
+        mm = - np.ones((30,22))
+        mm[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
+        y_H0 = - np.ones((30,22))
+        y_H0[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
+        y_H1 = - np.ones((30,22))
+        y_H1[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
+
+    def set_action(self, action):
+        self.action = action
+
+    def update_state(self):
+        self.state[0].append(self.action[0])
+        self.state[1].append(self.action[1])
+
+class user_data:
+    def __init__():
+
+        
+if __name__ == "__main__":
+    env = ENV()
+    env.get_data_state()
