@@ -10,11 +10,6 @@
 import json
 import os
 import argparse
-<<<<<<< HEAD
-from argparse import Action, RawTextHelpFormatter
-=======
-from argparse import RawTextHelpFormatter
->>>>>>> a938275dc4d0de872bd9cd5a6b4ed99b58313d39
 import scipy.io as scio
 import numpy as np
 
@@ -23,17 +18,24 @@ class ENV:
         # load erodibility data from dataset      
         erodibility_data = scio.loadmat("erodibility_dataset.mat")
         tech_names = {'mm', 'y_H0', 'y_H1'}
+        self.data_version = 0
         self.raw_data = ({key: value for key, value in erodibility_data.items()
                           if key in tech_names})
         # action/state includes [location index, samples in each index] 
         # here is the initial templates
         self.action = [[1,5,9,13,17,21], [3,3,3,3,3,3]]    
         self.state = [[1,5,9,13,17,21], [3,3,3,3,3,3]]
+        
 
     def initiate_template(self, action):
         self.action = action
         self.state = action
+        
+    def get_state(self):
+        return self.state
 
+    def get_action(self):
+        return self.action
 
     def get_data_state(self):
         # get the index of rows and cols
@@ -44,22 +46,29 @@ class ENV:
                 row_random = np.random.randint(1,22)
                 col_index.append(self.state[0][i])
                 row_index.append(row_random)
-        mm = - np.ones((30,22))
+        mm = np.zeros((30,22))
         mm[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
-        y_H0 = - np.ones((30,22))
-        y_H0[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
-        y_H1 = - np.ones((30,22))
-        y_H1[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
+        y_H0 = np.zeros((30,22))
+        y_H0[row_index, col_index] = self.raw_data['y_H0'][row_index, col_index]
+        y_H1 = np.zeros((30,22))
+        y_H1[row_index, col_index] = self.raw_data['y_H1'][row_index, col_index]
+        if(self.data_version == 0):
+            erodi = y_H0
+        elif(self.data_version == 1):
+            erodi = y_H1
+        return mm, erodi
 
     def set_action(self, action):
         self.action = action
 
+    def set_data_version(self, data_version):
+        self.data_version = data_version
     def update_state(self):
         self.state[0].append(self.action[0])
         self.state[1].append(self.action[1])
 
-class user_data:
-    def __init__():
+# class user_data:
+#     def __init__():
 
         
 if __name__ == "__main__":
