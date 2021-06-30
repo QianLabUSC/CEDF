@@ -10,6 +10,8 @@
 from env_wrapper import *
 import seaborn as sns
 import matplotlib.pyplot as plt
+from scipy import optimize
+import random
 
 class rule_state_machine:
     def __init__(self):
@@ -25,6 +27,7 @@ class rule_state_machine:
         'Feature_high'])
         self.hypo_sample = 0
         self.information_matrix = []
+        self.accuracy_matrix = []
 
 
     def set_init_hypo(self, hypo_location, hypo_sample):
@@ -76,8 +79,53 @@ class rule_state_machine:
             locs =  sample_state[0][i]
             self.information_matrix = gauss(locs, scale).reshape(22, 1)
 
-    # def handle_information_accuracy(self):
-    #     data_state = env.get_data_state()
+    def handle_information_accuracy(self):
+        mm, data_state = self.env.get_data_state()
+        data_samples = (data_state != 0).sum(0)
+        number_cost = 1 - 1/(data_samples + 0.01)
+        # error_cost = np.std(data_state, axis=0)
+        for col in range(data_state.shape[1]): 
+            effective_data = data_state[:,col][np.nonzero(data_state[:,col])]
+            median = np.median(effective_data) 
+            k1 = 1.4826
+            mad = k1 * np.median(np.abs(effective_data-median))        
+            lower_limit = median - (3*mad)
+            upper_limit = median + (3*mad)
+            outlier_data_num = (len(effective_data[effective_data> upper_limit 
+                                                or effective_data<lower_limit]))
+        if(data_samples == 0):
+            total_cost = 0
+        elif(data_samples > 0):
+            total_cost = 1 - 1/(1+ (data_samples - 0.99)/(3*outlier_data_num + 1))
+            self.accuracy_matrix.append(total_cost)
+
+
+    def handle_feature_point_detection(self):
+        mm, erodi = self.env.get_data_state()
+        mm_mean = np.mean(mm, axis=0)
+        erodi_mean = np.mean(erodi, axis=0)
+        data_index = mm_mean(mm_mean != 0)
+        data_mean = erodi_mean(erodi_mean != 0)
+        print(data_index)
+        print(erodi_mean)
+        p , e = optimize.curve_fit(piecewise_linear, data_index, data_mean)
+        xd = np.linspace(0, 22, 22)
+        plt.plot(x, y, "o")
+        plt.plot(xd, piecewise_linear(xd, *p))
+        plt.savefig('123.png')        
+
+
+
+
+
+
+
+def piecewise_linear(x, x0, y0, k1, k2):
+	# x<x0 ⇒ lambda x: k1*x + y0 - k1*x0
+	# x>=x0 ⇒ lambda x: k2*x + y0 - k2*x0
+    return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
+                                   lambda x:k2*x + y0-k2*x0])
+
 
 
 def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
@@ -86,9 +134,10 @@ def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
 if __name__ == "__main__":
     DM = rule_state_machine()
     x = np.linspace(1,22,22)
-    information_matrix = gauss(x).reshape(22,1)
+    information_matrix = gauss(1,0.1).reshape(22,1)
     print(information_matrix)
     sns.set()
     ax = sns.heatmap(information_matrix, vmin=0, vmax=1)
     plt.title('Information Matrix')
     plt.savefig("test.png")  
+    DM.handle_feature_point_detection()
