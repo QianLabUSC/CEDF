@@ -73,32 +73,39 @@ class rule_state_machine:
     #     elif(self.current_state == 2):
 
     def handle_information_coverage(self):
-        sample_state = env.get_state()
-        for i in len(sample_state[0]):
-            x = np.linspace(1,22,22)     #information matrix in location
+        sample_state = self.env.get_state()
+        self.information_matrix = np.zeros(22)     #information matrix in location
+        for i in range(len(sample_state[0])):
+            
             scale = 0.1 * sample_state[1][i] + 1
             locs =  sample_state[0][i]
-            self.information_matrix = gauss(locs, scale).reshape(22, 1)
+            self.information_matrix += gauss(locs, scale)
+            # print(self.information_matrix)
 
     def handle_information_accuracy(self):
         mm, data_state = self.env.get_data_state()
-        data_samples = (data_state != 0).sum(0)
-        number_cost = 1 - 1/(data_samples + 0.01)
+        loc_state = self.env.get_state()
         # error_cost = np.std(data_state, axis=0)
         for col in range(data_state.shape[1]): 
-            effective_data = data_state[:,col][np.nonzero(data_state[:,col])]
-            median = np.median(effective_data) 
-            k1 = 1.4826
-            mad = k1 * np.median(np.abs(effective_data-median))        
-            lower_limit = median - (3*mad)
-            upper_limit = median + (3*mad)
-            outlier_data_num = (len(effective_data[effective_data> upper_limit 
-                                                or effective_data<lower_limit]))
-        if(data_samples == 0):
-            total_cost = 0
-        elif(data_samples > 0):
-            total_cost = 1 - 1/(1+ (data_samples - 0.99)/(3*outlier_data_num + 1))
-            self.accuracy_matrix.append(total_cost)
+            if col in loc_state[0]:
+                effective_data = data_state[:,col][np.nonzero(data_state[:,col])]
+                print(effective_data)
+                median = np.median(effective_data) 
+                k1 = 1.4826
+                mad = k1 * np.median(np.abs(effective_data-median))
+                lower_limit = median - (3*mad)
+                upper_limit = median + (3*mad)
+                outlier_data_num = (len(effective_data[(effective_data> 
+                                upper_limit) & (effective_data<lower_limit)]))
+                data_samples = len(effective_data)
+                if(data_samples == 0):
+                    total_cost = 0
+                elif(data_samples > 0):
+                    total_cost = 1 - 1/(1+ (data_samples - 0.99)/(3*outlier_data_num + 1))
+                    self.accuracy_matrix.append(total_cost)
+            else:
+                self.accuracy_matrix.append(0)
+        
 
 
     def handle_feature_point_detection(self):
@@ -120,6 +127,17 @@ class rule_state_machine:
         # plt.savefig('123.png')
 
     def handle_state_judge(self):
+        if(self.current_state == 0):
+            self.current_state = 1
+        elif(self.current_state == 1):
+            if(np.min(self.accuracy_matrix) > 0.7 and 
+            len(self.information_matrix[self.information_matrix > 0.8]) > 15):
+                self.current_state == 2
+            else: 
+                self.current_state == 1
+        elif(self.current_state == 2):
+            if()
+
 
 
 
@@ -148,4 +166,6 @@ if __name__ == "__main__":
     # ax = sns.heatmap(information_matrix, vmin=0, vmax=1)
     # plt.title('Information Matrix')
     # plt.savefig("test.png")  
-    DM.handle_feature_point_detection()
+    # DM.handle_feature_point_detection()
+    # DM.handle_information_accuracy()
+    DM.handle_information_coverage()
