@@ -28,6 +28,7 @@ class rule_state_machine:
         self.hypo_sample = 0
         self.information_matrix = []
         self.accuracy_matrix = []
+        self.fitting_error_matrix = []
 
 
     def set_init_hypo(self, hypo_location, hypo_sample):
@@ -101,18 +102,24 @@ class rule_state_machine:
 
 
     def handle_feature_point_detection(self):
+        self.fitting_error_matrix = np.zeros(22)
         mm, erodi = self.env.get_data_state()
         mm_mean = np.mean(mm, axis=0)
+        mm_nonzeroindex = (mm_mean != 0)
         erodi_mean = np.mean(erodi, axis=0)
-        data_index = mm_mean(mm_mean != 0)
-        data_mean = erodi_mean(erodi_mean != 0)
-        print(data_index)
-        print(erodi_mean)
+        data_index = mm_mean[mm_nonzeroindex]
+        data_mean = erodi_mean[mm_nonzeroindex]
         p , e = optimize.curve_fit(piecewise_linear, data_index, data_mean)
-        xd = np.linspace(0, 22, 22)
-        plt.plot(x, y, "o")
-        plt.plot(xd, piecewise_linear(xd, *p))
-        plt.savefig('123.png')        
+        xd = np.linspace(0, np.max(data_index), 22)
+        fitting_results = piecewise_linear(data_index, *p)
+        fitting_error = fitting_results - data_mean
+        mm_mean[mm_nonzeroindex] = fitting_error
+        self.fitting_error_matrix[mm_nonzeroindex] = fitting_error
+        # plt.plot(data_index, data_mean, "o")
+        # plt.plot(data_index, fitting_error, "+")
+        # plt.savefig('123.png')
+
+    def handle_state_judge(self):
 
 
 
@@ -120,11 +127,12 @@ class rule_state_machine:
 
 
 
-def piecewise_linear(x, x0, y0, k1, k2):
+
+def piecewise_linear(x, x0, y0, k1):
 	# x<x0 ⇒ lambda x: k1*x + y0 - k1*x0
 	# x>=x0 ⇒ lambda x: k2*x + y0 - k2*x0
     return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
-                                   lambda x:k2*x + y0-k2*x0])
+                                   lambda x: y0])
 
 
 
@@ -133,11 +141,11 @@ def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
 
 if __name__ == "__main__":
     DM = rule_state_machine()
-    x = np.linspace(1,22,22)
-    information_matrix = gauss(1,0.1).reshape(22,1)
-    print(information_matrix)
-    sns.set()
-    ax = sns.heatmap(information_matrix, vmin=0, vmax=1)
-    plt.title('Information Matrix')
-    plt.savefig("test.png")  
+    # x = np.linspace(1,22,22)
+    # information_matrix = gauss(1,0.1).reshape(22,1)
+    # print(information_matrix)
+    # sns.set()
+    # ax = sns.heatmap(information_matrix, vmin=0, vmax=1)
+    # plt.title('Information Matrix')
+    # plt.savefig("test.png")  
     DM.handle_feature_point_detection()
