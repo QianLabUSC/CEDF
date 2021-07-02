@@ -67,11 +67,6 @@ class rule_state_machine:
         initial_action = [location_index, sample_index]
         self.env.initiate_template(initial_action)
 
-    # def take_action(self):
-    #     if(self.current_state == 0):
-    #     elif(self.current_state == 1):
-    #     elif(self.current_state == 2):
-
     def handle_information_coverage(self):
         sample_state = self.env.get_state()
         self.information_matrix = np.zeros(22)     #information matrix in location
@@ -132,12 +127,37 @@ class rule_state_machine:
         elif(self.current_state == 1):
             if(np.min(self.accuracy_matrix) > 0.7 and 
             len(self.information_matrix[self.information_matrix > 0.8]) > 15):
-                self.current_state == 2
+                self.current_state = 2
             else: 
-                self.current_state == 1
+                self.current_state = 1
         elif(self.current_state == 2):
-            if()
+            if(len(self.fitting_error_matrix[self.fitting_error_matrix > 0.8]) > 0):
+                self.current_state = 1
+            elif():
+                self.current_state = 2
 
+    def take_action(self):
+        if(self.current_state == 0):
+            self.choose_initial_template()
+        elif(self.current_state == 1):
+            action_loc = np.argmin(self.information_matrix)
+            self.env.set_action([action_loc],[3])
+            accuracy_loc = np.where(self.accuracy_matrix < 0.7)
+            accuracy_samples = np.ones(len(accuracy_loc))
+            self.env.set_action(accuracy_loc,accuracy_samples) 
+        elif(self.current_state == 2):
+            fitting_error_loc = np.where(self.fitting_error_matrix > 0.8)
+            add_loc = []
+            add_samples = []
+            current_state = self.env.get_state()
+            for i in fitting_error_loc:
+                if not i+1 in current_state[0]:
+                    add_loc.append(i+1)
+                    add_samples.append(3)
+                if not i-1 in current_state[0]:
+                    add_loc.append(i-1)
+                    add_samples.append(3)
+            self.env.set_action(add_loc, add_samples)
 
 
 
