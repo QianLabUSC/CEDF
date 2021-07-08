@@ -12,6 +12,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy import optimize
 import random
+import matplotlib.pylab as pylab
+import numpy as np
+from PIL import Image
 
 class rule_state_machine:
     def __init__(self):
@@ -75,7 +78,7 @@ class rule_state_machine:
             scale = 0.1 * sample_state[1][i] + 1
             locs =  sample_state[0][i]
             self.information_matrix += gauss(locs, scale)
-            # print(self.information_matrix)
+        # print(self.information_matrix)
 
     def handle_information_accuracy(self):
         mm, data_state = self.env.get_data_state()
@@ -100,7 +103,7 @@ class rule_state_machine:
                     self.accuracy_matrix.append(total_cost)
             else:
                 self.accuracy_matrix.append(0)
-        
+        # print(self.accuracy_matrix)
 
 
     def handle_feature_point_detection(self):
@@ -135,6 +138,17 @@ class rule_state_machine:
                 self.current_state = 1
             elif():
                 self.current_state = 2
+    
+    def information_model(self):
+        coverage_criteria = (len(self.information_matrix[self.information_matrix
+                             < 0.8]) / 22)
+        accuracy_matrix = np.array(self.accuracy_matrix)
+        print(accuracy_matrix)
+        accuracy_criteria = (len(accuracy_matrix[(accuracy_matrix < 0.6) & (accuracy_matrix != 0)]) /
+                        len(accuracy_matrix[accuracy_matrix != 0]))
+        print(coverage_criteria)
+        print(accuracy_criteria)
+        self.plot(coverage_criteria, accuracy_criteria)
 
     def take_action(self):
         if(self.current_state == 0):
@@ -159,9 +173,38 @@ class rule_state_machine:
                     add_samples.append(3)
             self.env.set_action(add_loc, add_samples)
 
+    def plot(self, x, y):
+        myparams = {
 
+        'axes.labelsize': '10',
 
+        'xtick.labelsize': '10',
 
+        'ytick.labelsize': '10',
+
+        'lines.linewidth': 1,
+
+        'legend.fontsize': '10',
+
+        'font.family': 'Times New Roman',
+
+        'figure.figsize': '9, 5'  #图片尺寸
+
+        }
+
+        pylab.rcParams.update(myparams)  #更新自己的设置
+        # line_styles=['ro-','b^-','gs-','ro--','b^--','gs--']  #线型设置
+        
+        fig1 = plt.figure(1)
+        a = plt.plot(x, y ,marker='o',
+                markersize=5)
+        
+        plt.legend(loc="lower right")  #图例位置 右下角
+        plt.ylabel('accuracy') 
+        plt.xlabel('coverage ') 
+        plt.savefig('xxx0-10-0.png')
+        #注意.show()操作后会默认打开一个空白fig,此时保存,容易出现保存的为纯白背景,所以请在show()操作前保存fig.
+        # plt.show()
 
 
 
@@ -171,8 +214,6 @@ def piecewise_linear(x, x0, y0, k1):
 	# x>=x0 ⇒ lambda x: k2*x + y0 - k2*x0
     return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
                                    lambda x: y0])
-
-
 
 def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
     return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
@@ -187,5 +228,7 @@ if __name__ == "__main__":
     # plt.title('Information Matrix')
     # plt.savefig("test.png")  
     # DM.handle_feature_point_detection()
-    # DM.handle_information_accuracy()
+    DM.handle_information_accuracy()
     DM.handle_information_coverage()
+    DM.information_model()
+    # DM.plot()

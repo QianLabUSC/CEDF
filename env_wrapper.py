@@ -66,6 +66,8 @@ class ENV:
     def update_state(self):
         self.state[0].append(self.action[0])
         self.state[1].append(self.action[1])
+    def set_state(self, state):
+        self.state = state
 
 # class user_data:
 #     def __init__():
