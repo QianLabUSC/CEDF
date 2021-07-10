@@ -78,7 +78,7 @@ class rule_state_machine:
             scale = 0.1 * sample_state[1][i] + 1
             locs =  sample_state[0][i]
             self.information_matrix += gauss(locs, scale)
-        # print(self.information_matrix)
+        print(self.information_matrix)
 
     def handle_information_accuracy(self):
         mm, data_state = self.env.get_data_state()
@@ -87,7 +87,7 @@ class rule_state_machine:
         for col in range(data_state.shape[1]): 
             if col in loc_state[0]:
                 effective_data = data_state[:,col][np.nonzero(data_state[:,col])]
-                print(effective_data)
+                # print(effective_data)
                 median = np.median(effective_data) 
                 k1 = 1.4826
                 mad = k1 * np.median(np.abs(effective_data-median))
@@ -103,7 +103,7 @@ class rule_state_machine:
                     self.accuracy_matrix.append(total_cost)
             else:
                 self.accuracy_matrix.append(0)
-        # print(self.accuracy_matrix)
+        print(self.accuracy_matrix)
 
 
     def handle_feature_point_detection(self):
@@ -140,15 +140,16 @@ class rule_state_machine:
                 self.current_state = 2
     
     def information_model(self):
-        coverage_criteria = (len(self.information_matrix[self.information_matrix
-                             < 0.8]) / 22)
+        self.coverage_criteria = (len(self.information_matrix[self.information_matrix
+                             > 0.3]) / 22)
         accuracy_matrix = np.array(self.accuracy_matrix)
-        print(accuracy_matrix)
-        accuracy_criteria = (len(accuracy_matrix[(accuracy_matrix < 0.6) & (accuracy_matrix != 0)]) /
+        # print(accuracy_matrix)
+        self.accuracy_criteria = (len(accuracy_matrix[(accuracy_matrix > 0.6) & (accuracy_matrix != 0)]) /
                         len(accuracy_matrix[accuracy_matrix != 0]))
-        print(coverage_criteria)
-        print(accuracy_criteria)
-        self.plot(coverage_criteria, accuracy_criteria)
+        
+        print(self.accuracy_criteria)    # percentage of locs which the accuracy is lower than 0.6
+        print(self.coverage_criteria)    # percentage of locs which the information is lower than 0.8
+        
 
     def take_action(self):
         if(self.current_state == 0):
@@ -173,7 +174,7 @@ class rule_state_machine:
                     add_samples.append(3)
             self.env.set_action(add_loc, add_samples)
 
-    def plot(self, x, y):
+    def plot(self, color):
         myparams = {
 
         'axes.labelsize': '10',
@@ -196,13 +197,18 @@ class rule_state_machine:
         # line_styles=['ro-','b^-','gs-','ro--','b^--','gs--']  #线型设置
         
         fig1 = plt.figure(1)
-        a = plt.plot(x, y ,marker='o',
+        a = plt.plot(self.coverage_criteria, self.accuracy_criteria ,marker='o', color=sns.xkcd_rgb[color],
                 markersize=5)
         
         plt.legend(loc="lower right")  #图例位置 右下角
         plt.ylabel('accuracy') 
         plt.xlabel('coverage ') 
+        plt.xlim((0, 1.1))
+        plt.ylim((0, 1.1))
+        plt.axvline(x=1, c="b", ls="--", lw=1)
+        plt.axhline(y=1, c="b", ls="--", lw=1)
         plt.savefig('xxx0-10-0.png')
+
         #注意.show()操作后会默认打开一个空白fig,此时保存,容易出现保存的为纯白背景,所以请在show()操作前保存fig.
         # plt.show()
 
