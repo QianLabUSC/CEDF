@@ -15,6 +15,7 @@ import random
 import matplotlib.pylab as pylab
 import numpy as np
 from PIL import Image
+from math import *
 
 class rule_state_machine:
     def __init__(self):
@@ -120,9 +121,28 @@ class rule_state_machine:
         fitting_error = fitting_results - data_mean
         mm_mean[mm_nonzeroindex] = fitting_error
         self.fitting_error_matrix[mm_nonzeroindex] = fitting_error
-        # plt.plot(data_index, data_mean, "o")
-        # plt.plot(data_index, fitting_error, "+")
-        # plt.savefig('123.png')
+        print(data_mean)
+        nonzero_data_mean = data_mean[np.nonzero(data_mean != 0)]
+        rmse_data = (sqrt(np.sum(np.power(nonzero_data_mean, 2))/
+                                    np.size(nonzero_data_mean)))
+        print(rmse_data)
+        self.rmse_data = rmse_data
+        plt.plot(data_index, data_mean, "o")
+        plt.plot(data_index, fitting_results, "*")
+        plt.plot(data_index, fitting_error, "+")
+        plt.savefig('123.png')
+    def confidence_model(self):
+        non_zero_matrix = (self.fitting_error_matrix[np.nonzero
+                                    (self.fitting_error_matrix != 0)])
+        rmse = (sqrt(np.sum(np.power(non_zero_matrix, 2))/
+                                    np.size(non_zero_matrix)))
+        print(rmse)
+        print(self.fitting_error_matrix)
+        print(non_zero_matrix)
+        whole_rmse_percentage = rmse/self.rmse_data
+        print(whole_rmse_percentage)
+        confindence = (0.04 - whole_rmse_percentage) * 30 * self.coverage_criteria
+        print(confindence)
 
     def handle_state_judge(self):
         if(self.current_state == 0):
@@ -210,7 +230,7 @@ class rule_state_machine:
         plt.savefig('xxx0-10-0.png')
 
         #注意.show()操作后会默认打开一个空白fig,此时保存,容易出现保存的为纯白背景,所以请在show()操作前保存fig.
-        # plt.show()
+        plt.show()
 
 
 
@@ -232,9 +252,11 @@ if __name__ == "__main__":
     # sns.set()
     # ax = sns.heatmap(information_matrix, vmin=0, vmax=1)
     # plt.title('Information Matrix')
-    # plt.savefig("test.png")  
-    # DM.handle_feature_point_detection()
+    # plt.savefig("test.png") 
     DM.handle_information_accuracy()
     DM.handle_information_coverage()
     DM.information_model()
-    # DM.plot()
+    DM.plot('cool green') 
+    DM.handle_feature_point_detection()
+    DM.confidence_model()
+  
