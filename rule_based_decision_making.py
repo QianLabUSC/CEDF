@@ -131,6 +131,7 @@ class rule_state_machine:
         plt.plot(data_index, fitting_results, "*")
         plt.plot(data_index, fitting_error, "+")
         plt.savefig('123.png')
+
     def confidence_model(self):
         non_zero_matrix = (self.fitting_error_matrix[np.nonzero
                                     (self.fitting_error_matrix != 0)])
