@@ -109,42 +109,48 @@
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 471.6341829085457,
-            "normOffsetY": 106.70207753266224
+            "normOffsetY": 106.70207753266224,
+            "roc": "Very confident the data supports the hypothesis"
         },
         {
             "index": 9,
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 549.7357035767831,
-            "normOffsetY": 130.9025487256372
+            "normOffsetY": 130.9025487256372,
+            "roc": "Very confident the data supports the hypothesis"
         },
         {
             "index": 11,
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 614.6369672306704,
-            "normOffsetY": 158.4030841721996
+            "normOffsetY": 158.4030841721996,
+            "roc": "Very confident the data supports the hypothesis"
         },
         {
             "index": 14,
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 689.4384236453202,
-            "normOffsetY": 191.40372670807454
+            "normOffsetY": 191.40372670807454,
+            "roc": "Very confident the data supports the hypothesis"
         },
         {
             "index": 16,
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 765.3399014778325,
-            "normOffsetY": 233.20454058684942
+            "normOffsetY": 233.20454058684942,
+            "roc": "Very confident the data supports the hypothesis"
         },
         {
             "index": 18,
             "measurements": 30,
             "type": "normal",
             "normOffsetX": 833.5412293853074,
-            "normOffsetY": 277.2053973013493
+            "normOffsetY": 277.2053973013493,
+            "roc": "Very confident the data supports the hypothesis"
         }
     ]
 }

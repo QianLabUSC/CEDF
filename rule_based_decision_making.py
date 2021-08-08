@@ -53,7 +53,7 @@ class rule_state_machine:
             change the initial template in env wrapper
         '''
         if(self.hypo_location == 0):
-            location_index = [1,5,9,13,17,21]
+            location_index = [1,9,13,21]
         elif(self.hypo_location == 1):
             location_index = [1,4,7,11,16,21]
         elif(self.hypo_location == 2):
@@ -61,7 +61,7 @@ class rule_state_machine:
         elif(self.hypo_location == 3):
             location_index = [1,6,11,14,17,20]
         if(self.hypo_sample == 0):
-            sample_index = [3,3,3,3,3,3]
+            sample_index = [3,3,3,3]
         elif(self.hypo_sample == 1):
             sample_index = [5,5,3,3,3,3]
         elif(self.hypo_sample == 2):
@@ -79,7 +79,9 @@ class rule_state_machine:
             scale = 0.1 * sample_state[1][i] + 1
             locs =  sample_state[0][i]
             self.information_matrix += gauss(locs, scale)
-        print(self.information_matrix)
+            # print(gauss(locs, scale))
+            # self.plot_line('cool green', np.linspace(1,22,22), gauss(locs, scale), 'test'+str(i))
+        # print("coverage_matrix: ", self.information_matrix)
 
     def handle_information_accuracy(self):
         mm, data_state = self.env.get_data_state()
@@ -104,10 +106,11 @@ class rule_state_machine:
                     self.accuracy_matrix.append(total_cost)
             else:
                 self.accuracy_matrix.append(0)
-        print(self.accuracy_matrix)
+        # print('accuracy_matrix: ', self.accuracy_matrix)
 
 
     def handle_feature_point_detection(self):
+        print(self.env.get_state())
         self.fitting_error_matrix = np.zeros(22)
         mm, erodi = self.env.get_data_state()
         mm_mean = np.mean(mm, axis=0)
@@ -121,29 +124,29 @@ class rule_state_machine:
         fitting_error = fitting_results - data_mean
         mm_mean[mm_nonzeroindex] = fitting_error
         self.fitting_error_matrix[mm_nonzeroindex] = fitting_error
-        print(data_mean)
+        # print(data_mean)
         nonzero_data_mean = data_mean[np.nonzero(data_mean != 0)]
         rmse_data = (sqrt(np.sum(np.power(nonzero_data_mean, 2))/
                                     np.size(nonzero_data_mean)))
-        print(rmse_data)
+        # print(rmse_data)
         self.rmse_data = rmse_data
-        plt.plot(data_index, data_mean, "o")
-        plt.plot(data_index, fitting_results, "*")
-        plt.plot(data_index, fitting_error, "+")
-        plt.savefig('123.png')
+        # plt.plot(data_index, data_mean, "o")
+        # plt.plot(data_index, fitting_results, "*")
+        # plt.plot(data_index, fitting_error, "+")
+        # plt.savefig('123.png')
 
     def confidence_model(self):
         non_zero_matrix = (self.fitting_error_matrix[np.nonzero
                                     (self.fitting_error_matrix != 0)])
         rmse = (sqrt(np.sum(np.power(non_zero_matrix, 2))/
                                     np.size(non_zero_matrix)))
-        print(rmse)
-        print(self.fitting_error_matrix)
-        print(non_zero_matrix)
+        # print(rmse)
+        # print(self.fitting_error_matrix)
+        # print(non_zero_matrix)
         whole_rmse_percentage = rmse/self.rmse_data
-        print(whole_rmse_percentage)
+        # print(whole_rmse_percentage)
         confindence = (0.04 - whole_rmse_percentage) * 30 * self.coverage_criteria
-        print(confindence)
+        # print(confindence)
 
     def handle_state_judge(self):
         if(self.current_state == 0):
@@ -168,8 +171,8 @@ class rule_state_machine:
         self.accuracy_criteria = (len(accuracy_matrix[(accuracy_matrix > 0.6) & (accuracy_matrix != 0)]) /
                         len(accuracy_matrix[accuracy_matrix != 0]))
         
-        print(self.accuracy_criteria)    # percentage of locs which the accuracy is lower than 0.6
-        print(self.coverage_criteria)    # percentage of locs which the information is lower than 0.8
+        # print('accuracy_value:', self.accuracy_criteria)    # percentage of locs which the accuracy is lower than 0.6
+        # print('coverage_value:', self.coverage_criteria)    # percentage of locs which the information is lower than 0.8
         
 
     def take_action(self):
@@ -195,7 +198,7 @@ class rule_state_machine:
                     add_samples.append(3)
             self.env.set_action(add_loc, add_samples)
 
-    def plot(self, color):
+    def plot(self, color, name):
         myparams = {
 
         'axes.labelsize': '10',
@@ -228,10 +231,10 @@ class rule_state_machine:
         plt.ylim((0, 1.1))
         plt.axvline(x=1, c="b", ls="--", lw=1)
         plt.axhline(y=1, c="b", ls="--", lw=1)
-        plt.savefig('xxx0-10-0.png')
+        plt.savefig(name)
 
         #注意.show()操作后会默认打开一个空白fig,此时保存,容易出现保存的为纯白背景,所以请在show()操作前保存fig.
-        plt.show()
+        # plt.show()
 
 
 
@@ -247,6 +250,7 @@ def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
 
 if __name__ == "__main__":
     DM = rule_state_machine()
+    DM.choose_initial_template()
     # x = np.linspace(1,22,22)
     # information_matrix = gauss(1,0.1).reshape(22,1)
     # print(information_matrix)
@@ -257,7 +261,7 @@ if __name__ == "__main__":
     DM.handle_information_accuracy()
     DM.handle_information_coverage()
     DM.information_model()
-    DM.plot('cool green') 
+    DM.plot('cool green','test') 
     DM.handle_feature_point_detection()
     DM.confidence_model()
   

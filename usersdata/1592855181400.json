@@ -116,7 +116,8 @@
             "measurements": 3,
             "type": "normal",
             "normOffsetX": 849.2165345898479,
-            "normOffsetY": 283.8055258085243
+            "normOffsetY": 283.8055258085243,
+            "roc": "Very confident the data supports the hypothesis"
         }
     ]
 }
