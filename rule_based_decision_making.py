@@ -77,13 +77,15 @@ class rule_state_machine:
         for i in range(len(sample_state[0])):
             
             scale = 0.1 * sample_state[1][i] + 1
-            locs =  sample_state[0][i]
+            locs =  sample_state[0][i] + 1
             self.information_matrix += gauss(locs, scale)
+            # print(self.information_matrix)
             # print(gauss(locs, scale))
             # self.plot_line('cool green', np.linspace(1,22,22), gauss(locs, scale), 'test'+str(i))
         # print("coverage_matrix: ", self.information_matrix)
 
     def handle_information_accuracy(self):
+        accuracy_matrix = []
         mm, data_state = self.env.get_data_state()
         loc_state = self.env.get_state()
         # error_cost = np.std(data_state, axis=0)
@@ -103,13 +105,15 @@ class rule_state_machine:
                     total_cost = 0
                 elif(data_samples > 0):
                     total_cost = 1 - 1/(1+ (data_samples - 0.99)/(3*outlier_data_num + 1))
-                    self.accuracy_matrix.append(total_cost)
+                    accuracy_matrix.append(total_cost)
             else:
-                self.accuracy_matrix.append(0)
+                accuracy_matrix.append(0)
+        self.accuracy_matrix = accuracy_matrix
         # print('accuracy_matrix: ', self.accuracy_matrix)
 
 
     def handle_feature_point_detection(self):
+        loc_state = self.env.get_state()[0]
         print(self.env.get_state())
         self.fitting_error_matrix = np.zeros(22)
         mm, erodi = self.env.get_data_state()
@@ -119,21 +123,33 @@ class rule_state_machine:
         data_index = mm_mean[mm_nonzeroindex]
         data_mean = erodi_mean[mm_nonzeroindex]
         p , e = optimize.curve_fit(piecewise_linear, data_index, data_mean)
+        # print('dfadfaaf', p)
         xd = np.linspace(0, np.max(data_index), 22)
+        fit_curve = piecewise_linear(xd, *p)
         fitting_results = piecewise_linear(data_index, *p)
         fitting_error = fitting_results - data_mean
         mm_mean[mm_nonzeroindex] = fitting_error
         self.fitting_error_matrix[mm_nonzeroindex] = fitting_error
+
         # print(data_mean)
         nonzero_data_mean = data_mean[np.nonzero(data_mean != 0)]
         rmse_data = (sqrt(np.sum(np.power(nonzero_data_mean, 2))/
                                     np.size(nonzero_data_mean)))
         # print(rmse_data)
         self.rmse_data = rmse_data
+        # plt.plot(xd, fit_curve)
         # plt.plot(data_index, data_mean, "o")
         # plt.plot(data_index, fitting_results, "*")
         # plt.plot(data_index, fitting_error, "+")
         # plt.savefig('123.png')
+
+        # find the feature point location
+        array = np.asarray(data_index)
+        idx = (np.abs(array - p[0])).argmin()
+        loc_indx = loc_state[idx]
+        saturation_estimated = int(loc_indx * (p[0]/array[idx]))
+        self.saturation_selection = np.arange(saturation_estimated - 2, saturation_estimated + 3, 1)
+        
 
     def confidence_model(self):
         non_zero_matrix = (self.fitting_error_matrix[np.nonzero

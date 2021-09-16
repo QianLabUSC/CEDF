@@ -13,10 +13,21 @@ def piecewise_linear(x, x0, y0, k1, k2):
     return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
                                    lambda x:k2*x + y0-k2*x0])
 
-# 用已有的 (x, y) 去拟合 piecewise_linear 分段函数
-p , e = optimize.curve_fit(piecewise_linear, x, y)
+def gauss(mean, scale, x=np.linspace(1,22,22), sigma=4):
+    return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
 
-xd = np.linspace(0, 15, 100)
-plt.plot(x, y, "o")
-plt.plot(xd, piecewise_linear(xd, *p))
-plt.savefig('123.png')
+# # 用已有的 (x, y) 去拟合 piecewise_linear 分段函数
+# p , e = optimize.curve_fit(piecewise_linear, x, y)
+
+# xd = np.linspace(0, 15, 100)
+# plt.plot(x, y, "o")
+# plt.plot(xd, piecewise_linear(xd, *p))
+# plt.savefig('123.png')
+xi = np.linspace(1,22,22)
+information_matrix = np.zeros((22))
+x = [1, 13]
+for i in range(len(x)):
+	information_matrix += gauss(x[i],1)
+	# plt.plot(xi, information_matrix)
+plt.plot(xi, information_matrix)
+plt.show()

@@ -43,9 +43,12 @@ class ENV:
         col_index = []
         for i in range(len(self.state[0])):
             for j in range(self.state[1][i]):
-                row_random = np.random.randint(1,22)
-                col_index.append(self.state[0][i])
-                row_index.append(row_random)
+                row_random = j
+                if row_random < 30:
+                    col_index.append(self.state[0][i])
+                    row_index.append(row_random)
+                else:
+                    break
         mm = np.zeros((30,22))
         mm[row_index, col_index] = self.raw_data['mm'][row_index, col_index]
         y_H0 = np.zeros((30,22))

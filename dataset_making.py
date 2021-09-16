@@ -23,8 +23,8 @@ import scipy.io as scio
 # raw_data['y_H0'] = raw_data['y_H0'].tolist()
 # raw_data['y_H1'] = raw_data['y_H1'].tolist()
 # print(type(raw_data))
-with open('raw_data.json', 'w') as f:
-    json.dump(raw_data, f, indent=4)
+# with open('raw_data.json', 'w') as f:
+#     json.dump(raw_data, f, indent=4)
 # Load all user data to training data set 
 # def save_data(user_id, user_data):
 #     '''
@@ -46,12 +46,12 @@ def main(source_path):
     for i in user_list:
         with open(source_path + i) as f:
             json_obj = json.load(f)
-            jsondata_list.append(json_obj)
-            save_data(i, json_obj)
+        with open(source_path + i, "w") as f:
+            json.dump(json_obj, f, indent=4)
     
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter)
     parser.add_argument('-s', dest='source_path', help="please specify your source scenario path with --src sourcepath")
     args = parser.parse_args()
-    # main(args.source_path)
+    main(args.source_path)
