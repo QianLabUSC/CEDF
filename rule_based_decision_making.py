@@ -120,6 +120,7 @@ class rule_state_machine:
         mm_mean = np.mean(mm, axis=0)
         mm_nonzeroindex = (mm_mean != 0)
         erodi_mean = np.mean(erodi, axis=0)
+        self.loc_index = np.linspace(1,22,22)[mm_nonzeroindex]
         data_index = mm_mean[mm_nonzeroindex]
         data_mean = erodi_mean[mm_nonzeroindex]
         p , e = optimize.curve_fit(piecewise_linear, data_index, data_mean)
@@ -127,8 +128,10 @@ class rule_state_machine:
         xd = np.linspace(0, np.max(data_index), 22)
         fit_curve = piecewise_linear(xd, *p)
         fitting_results = piecewise_linear(data_index, *p)
+        self.fitting_results = fitting_results
         fitting_error = fitting_results - data_mean
         mm_mean[mm_nonzeroindex] = fitting_error
+        self.data_index = data_index
         self.fitting_error_matrix[mm_nonzeroindex] = fitting_error
 
         # print(data_mean)
@@ -137,11 +140,13 @@ class rule_state_machine:
                                     np.size(nonzero_data_mean)))
         # print(rmse_data)
         self.rmse_data = rmse_data
-        # plt.plot(xd, fit_curve)
-        # plt.plot(data_index, data_mean, "o")
-        # plt.plot(data_index, fitting_results, "*")
-        # plt.plot(data_index, fitting_error, "+")
+        plt.plot(xd, fit_curve)
+        plt.plot(data_index, data_mean, "o")
+        plt.plot(data_index, fitting_results, "*")
+        #plt.plot(data_index, fitting_error, "+")
+        plt.show()
         # plt.savefig('123.png')
+
 
         # find the feature point location
         array = np.asarray(data_index)
@@ -225,7 +230,7 @@ class rule_state_machine:
 
         'lines.linewidth': 1,
 
-        'legend.fontsize': '10',
+        'legend.fontsize': '3',
 
         'font.family': 'Times New Roman',
 

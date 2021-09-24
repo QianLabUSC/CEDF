@@ -38,7 +38,7 @@ myparams = {
 
     'font.family': 'Times New Roman',
 
-    'figure.figsize': '20, 12'  #图片尺寸
+    'figure.figsize': '20, 15'  #图片尺寸
 
     }
 pylab.rcParams.update(myparams)  #更新自己的设置
@@ -121,12 +121,13 @@ for i in range(len(user_list)):
             elif(json_obj['rows'][j]['type'] == "discarded"):
                 continue
         print(deviate_length)
-        # drop out the non deviate user and step length than 5
-        if if_deviate and deviate_length >= 5:
+        data_version = json_obj['isAlternativeHypo']      # 0-the right 1-the wrong hypo
+        user_conclusion = json_obj['concludeQuestions']['support']
+        # drop out the non deviate user and step length than 5""
+        if if_deviate and deviate_length >= 5 and ((data_version==0 and user_conclusion == "Yes") or (data_version==1 and user_conclusion=="No")):
             fig, axs = plt.subplots(2, 1, sharex=True)
 
-            data_version = json_obj['isAlternativeHypo']      # 0-the right 1-the wrong hypo
-            user_conclusion = json_obj['concludeQuestions']['support']
+
             state = [[],[]]
             status = []
             data_x = []
@@ -163,11 +164,14 @@ for i in range(len(user_list)):
                     print(count)
                     print(user_list[i])
                     DM.handle_feature_point_detection()
+                    fitting_error_total = DM.rmse_data
                     abs_discrepancy = normalization(np.absolute(DM.fitting_error_matrix))
                 except:
                     abs_discrepancy = np.zeros(22)
+                    fitting_error_total = 0
             else:
                 abs_discrepancy = np.zeros(22)
+                fitting_error_total = 0
             discrepany_matrix = np.zeros(22)
             # for ii in range(len(abs_discrepancy)):
             #     interst_length = 2 
@@ -197,7 +201,29 @@ for i in range(len(user_list)):
             feature_selection = DM.saturation_selection
             print('123123123', feature_selection)
 
+            # # statistic the deviate_state_0 (whether in coverage selection and discrepancy selection)
+            # total_number[confidence] += 1
+            # if deviate_state_0 in information_selection:
+            #     information_selection_number[confidence] += 1
+            # if deviate_state_0 in discrepancy_selection:
+            #     discrepancy_selection_number[confidence] += 1
+            # if (deviate_state_0 in information_selection) and (deviate_state_0 in discrepancy_selection):
+            #     both_selection_number[confidence] += 1
+            # if (deviate_state_0 in feature_selection):
+            #     feature_selection_number[confidence] += 1
+
             # statistic the deviate_state_0 (whether in coverage selection and discrepancy selection)
+            if(fitting_error_total > 0 and fitting_error_total <= 0.5):
+                confidence = 0
+            elif(fitting_error_total > 0.5 and fitting_error_total <= 1):
+                confidence = 0.2
+            elif(fitting_error_total > 1 and fitting_error_total <= 1.5):
+                confidence = 0.4
+            elif(fitting_error_total > 1.5  and fitting_error_total <= 2):
+                confidence = 0.6
+            elif(fitting_error_total > 2):
+                confidence = 0.8
+
             total_number[confidence] += 1
             if deviate_state_0 in information_selection:
                 information_selection_number[confidence] += 1
@@ -207,7 +233,6 @@ for i in range(len(user_list)):
                 both_selection_number[confidence] += 1
             if (deviate_state_0 in feature_selection):
                 feature_selection_number[confidence] += 1
-            
 
             x = np.linspace(1,22,22)
             axs[0].plot(x, abs_discrepancy, marker="s", markersize="20", linewidth=3, label="distribut_discrepancy", c="pink")
@@ -264,10 +289,11 @@ plt.bar(x_shifted+3*width, both_selection_data, width=width, label="both selecti
 plt.bar(x_shifted+4*width, feature_selection_data, width=width, label="feature selection",color=["yellow"])
 plt.legend()
 plt.ylabel('number of participants')
-plt.xlabel('confidence')
-plt.title('selection driven mode')
-plt.yticks(range(0,18,1))
-plt.ylim((0,18))
+plt.xlabel('fitting error')
+x_label=['>0&<0.5','>0.5&<1','>1&<1.5','>1.5&<2','>2&<2.5']
+plt.xticks(xxx, x_label)  # 绘制x刻度标签plt.title('selection driven mode')
+plt.yticks(range(0,24,1))
+plt.ylim((0,24))
 plt.savefig('statictics')
 
 
