@@ -1,0 +1,212 @@
+{
+    "dataVersion": "LocalH2/GlobalH2",
+    "initialStrategy": {
+        "samples": [
+            [
+                {
+                    "index": 12,
+                    "measurements": 1,
+                    "type": "Normal",
+                    "normOffsetX": 713,
+                    "normOffsetY": 197.09375
+                },
+                {
+                    "index": 9,
+                    "measurements": 1,
+                    "type": "Normal",
+                    "normOffsetX": 607,
+                    "normOffsetY": 151.09375
+                }
+            ]
+        ],
+        "transects": [
+            {
+                "number": 16,
+                "templateNumber": -1,
+                "templateIdx": -1
+            }
+        ],
+        "localHypothesis": {
+            "nullHypothesis": 5,
+            "alternativeHypothesis1": 2,
+            "alternativeHypothesis2": 3
+        },
+        "globalHypothesis": {
+            "nullHypothesis": 6,
+            "alternativeHypothesis1": 5,
+            "alternativeHypothesis2": 2
+        }
+    },
+    "actualStrategy": {
+        "transects": [
+            {
+                "type": "planned",
+                "number": 16,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 12,
+                        "measurements": 1,
+                        "normOffsetX": 713,
+                        "normOffsetY": 197.09375,
+                        "moisture": [
+                            9.05
+                        ],
+                        "shear": [
+                            7.93
+                        ],
+                        "grain": [
+                            0.52
+                        ],
+                        "batteryLevelBefore": 0,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 9,
+                        "measurements": 1,
+                        "normOffsetX": 607,
+                        "normOffsetY": 151.09375,
+                        "moisture": [
+                            7.28
+                        ],
+                        "shear": [
+                            9.15
+                        ],
+                        "grain": [
+                            0.46
+                        ],
+                        "batteryLevelBefore": 0.005,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 3,
+                    "alternativeHypothesis1": 3,
+                    "alternativeHypothesis2": 3
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 3,
+                    "alternativeHypothesis1": 3,
+                    "alternativeHypothesis2": 3
+                }
+            }
+        ]
+    },
+    "finalHypotheses": {
+        "localHypothesis": {
+            "nullHypothesis": 3,
+            "alternativeHypothesis1": 3,
+            "alternativeHypothesis2": 3
+        },
+        "globalHypothesis": {
+            "nullHypothesis": 3,
+            "alternativeHypothesis1": 3,
+            "alternativeHypothesis2": 3
+        }
+    },
+    "surveyResponses": [
+        {
+            "id": "0-1",
+            "text": "Why did you select the particular number of measurements per location that you did?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "0-2",
+            "text": "Why did you select the particular measurement locations on each dune transect that you did?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "1-1",
+            "text": "Why did you select the particular dune transects (within the field area) that you did?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-2",
+            "text": "Did you ever adapt your strategy, why or why not?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-3",
+            "text": "Did you use the template feature during initial strategy selection? If so, did you find it useful?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-4",
+            "text": "Did you use the 'Update Charts Options' feature during data visualization? If so, did you have any preferences?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-5",
+            "text": "Do you think this web-based scenario has pedagogical value? How so? If not, what would need to be changed to make it useful for geoeducation?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-6",
+            "text": "Was this task too difficult?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "1-7",
+            "text": " Is there anything else you want to tell us?",
+            "type": "Text",
+            "value": "."
+        },
+        {
+            "id": "2-1",
+            "text": "What is your age?",
+            "type": "Text",
+            "value": "22"
+        },
+        {
+            "id": "2-2",
+            "text": "What is your gender?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "2-3",
+            "text": "Have you completed a bachelor's degree?",
+            "type": "MultipleChoice",
+            "value": "1"
+        },
+        {
+            "id": "2-4",
+            "text": "How many years of practice do you have, post bachelor's degree?",
+            "type": "Text",
+            "value": "0"
+        },
+        {
+            "id": "2-5",
+            "text": "What is your discipline?",
+            "type": "Text",
+            "value": "CS"
+        },
+        {
+            "id": "2-6",
+            "text": "How would you describe your specialization, if any?",
+            "type": "Text",
+            "value": "NA"
+        },
+        {
+            "id": "2-7",
+            "text": "Are you familiar with any of the features of this decision making scenario? Have you ever collected data at White Sands National Monument before or investigated a similar research question?",
+            "type": "MultipleChoice",
+            "value": "1"
+        },
+        {
+            "id": "2-8",
+            "text": "Are you in academia or industry?",
+            "type": "MultipleChoice",
+            "value": "1"
+        }
+    ]
+}

@@ -1,0 +1,990 @@
+{
+    "dataVersion": "LocalH2/GlobalH1",
+    "initialStrategy": {
+        "samples": [
+            [
+                {
+                    "index": 0,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 0,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 0,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 0,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 0,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 0,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 231,
+                    "normOffsetY": 70.09375
+                },
+                {
+                    "index": 7,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 511,
+                    "normOffsetY": 122.09375
+                },
+                {
+                    "index": 15,
+                    "measurements": 3,
+                    "type": "Normal",
+                    "normOffsetX": 837,
+                    "normOffsetY": 279.09375
+                },
+                {
+                    "index": 4,
+                    "measurements": 2,
+                    "type": "Normal",
+                    "normOffsetX": 373,
+                    "normOffsetY": 91.09375
+                }
+            ],
+            [
+                {
+                    "index": 1,
+                    "measurements": 1,
+                    "type": "Normal",
+                    "normOffsetX": 255,
+                    "normOffsetY": 71.09375
+                },
+                {
+                    "index": 10,
+                    "measurements": 1,
+                    "type": "Normal",
+                    "normOffsetX": 611,
+                    "normOffsetY": 152.09375
+                }
+            ]
+        ],
+        "transects": [
+            {
+                "number": 0,
+                "templateNumber": -1,
+                "templateIdx": -1
+            },
+            {
+                "number": 9,
+                "templateNumber": 0,
+                "templateIdx": 0
+            },
+            {
+                "number": 21,
+                "templateNumber": 9,
+                "templateIdx": 1
+            },
+            {
+                "number": 5,
+                "templateNumber": 0,
+                "templateIdx": 0
+            },
+            {
+                "number": 14,
+                "templateNumber": 5,
+                "templateIdx": 3
+            },
+            {
+                "number": 23,
+                "templateNumber": 21,
+                "templateIdx": 2
+            },
+            {
+                "number": 22,
+                "templateNumber": -1,
+                "templateIdx": -1
+            }
+        ],
+        "localHypothesis": {
+            "nullHypothesis": 5,
+            "alternativeHypothesis1": 1,
+            "alternativeHypothesis2": 4
+        },
+        "globalHypothesis": {
+            "nullHypothesis": 5,
+            "alternativeHypothesis1": 1,
+            "alternativeHypothesis2": 2
+        }
+    },
+    "actualStrategy": {
+        "transects": [
+            {
+                "type": "planned",
+                "number": 0,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 0,
+                        "measurements": 2,
+                        "normOffsetX": 231,
+                        "normOffsetY": 70.09375,
+                        "moisture": [
+                            0,
+                            0.06
+                        ],
+                        "shear": [
+                            2.32,
+                            2.39
+                        ],
+                        "grain": [
+                            0.46,
+                            0.47
+                        ],
+                        "batteryLevelBefore": 0,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 7,
+                        "measurements": 2,
+                        "normOffsetX": 511,
+                        "normOffsetY": 122.09375,
+                        "moisture": [
+                            0.71,
+                            0.19
+                        ],
+                        "shear": [
+                            2.35,
+                            1.87
+                        ],
+                        "grain": [
+                            0.55,
+                            0.57
+                        ],
+                        "batteryLevelBefore": 0.01,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 15,
+                        "measurements": 3,
+                        "normOffsetX": 837,
+                        "normOffsetY": 279.09375,
+                        "moisture": [
+                            6.35,
+                            5.91,
+                            6.07
+                        ],
+                        "shear": [
+                            9.33,
+                            9.41,
+                            9.29
+                        ],
+                        "grain": [
+                            0.65,
+                            0.65,
+                            0.64
+                        ],
+                        "batteryLevelBefore": 0.03423938200906205,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 4,
+                        "measurements": 2,
+                        "normOffsetX": 373,
+                        "normOffsetY": 91.09375,
+                        "moisture": [
+                            0.01,
+                            0.01
+                        ],
+                        "shear": [
+                            1.69,
+                            1.8
+                        ],
+                        "grain": [
+                            0.49,
+                            0.53
+                        ],
+                        "batteryLevelBefore": 0.06733116191044268,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "deviated",
+                        "index": 11,
+                        "measurements": 3,
+                        "normOffsetX": 677.6131934032984,
+                        "normOffsetY": 195.0704647676162,
+                        "moisture": [
+                            3.49,
+                            3.36,
+                            3.81
+                        ],
+                        "shear": [
+                            7.99,
+                            7.85,
+                            8.35
+                        ],
+                        "grain": [
+                            0.64,
+                            0.61,
+                            0.59
+                        ],
+                        "batteryLevelBefore": 0.10236314145661521,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "deviated",
+                        "index": 10,
+                        "measurements": 3,
+                        "normOffsetX": 627.7455557935318,
+                        "normOffsetY": 168.66995073891624,
+                        "moisture": [
+                            2.21,
+                            2.21,
+                            2.77
+                        ],
+                        "shear": [
+                            6.53,
+                            6.53,
+                            6.92
+                        ],
+                        "grain": [
+                            0.58,
+                            0.58,
+                            0.59
+                        ],
+                        "batteryLevelBefore": 0.13345664595448806,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 1,
+                    "alternativeHypothesis2": 4
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 4,
+                    "alternativeHypothesis2": 2
+                }
+            },
+            {
+                "type": "planned",
+                "number": 9,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 0,
+                        "measurements": 2,
+                        "normOffsetX": 231,
+                        "normOffsetY": 70.09375,
+                        "moisture": [
+                            0.14,
+                            0
+                        ],
+                        "shear": [
+                            1.95,
+                            1.85
+                        ],
+                        "grain": [
+                            0.34,
+                            0.34
+                        ],
+                        "batteryLevelBefore": 0.19584927905854244,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 7,
+                        "measurements": 2,
+                        "normOffsetX": 511,
+                        "normOffsetY": 122.09375,
+                        "moisture": [
+                            3.08,
+                            3.77
+                        ],
+                        "shear": [
+                            8.79,
+                            9.01
+                        ],
+                        "grain": [
+                            0.4,
+                            0.41
+                        ],
+                        "batteryLevelBefore": 0.20584927905854244,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 15,
+                        "measurements": 3,
+                        "normOffsetX": 837,
+                        "normOffsetY": 279.09375,
+                        "moisture": [
+                            8.89,
+                            9.38,
+                            9.38
+                        ],
+                        "shear": [
+                            8.26,
+                            7.83,
+                            7.83
+                        ],
+                        "grain": [
+                            0.46,
+                            0.48,
+                            0.48
+                        ],
+                        "batteryLevelBefore": 0.2300886610676045,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 4,
+                        "measurements": 2,
+                        "normOffsetX": 373,
+                        "normOffsetY": 91.09375,
+                        "moisture": [
+                            1.07,
+                            1.03
+                        ],
+                        "shear": [
+                            3.88,
+                            3.92
+                        ],
+                        "grain": [
+                            0.36,
+                            0.36
+                        ],
+                        "batteryLevelBefore": 0.26318044096898513,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 4,
+                    "alternativeHypothesis2": 1
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 4,
+                    "alternativeHypothesis2": 2
+                }
+            },
+            {
+                "type": "planned",
+                "number": 21,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 0,
+                        "measurements": 3,
+                        "normOffsetX": 231,
+                        "normOffsetY": 70.09375,
+                        "moisture": [
+                            2.96,
+                            2.57,
+                            2.44
+                        ],
+                        "shear": [
+                            7.63,
+                            7.43,
+                            7.43
+                        ],
+                        "grain": [
+                            0.34,
+                            0.34,
+                            0.36
+                        ],
+                        "batteryLevelBefore": 0.3647464074632269,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 7,
+                        "measurements": 3,
+                        "normOffsetX": 511,
+                        "normOffsetY": 122.09375,
+                        "moisture": [
+                            7.55,
+                            7.27,
+                            7.81
+                        ],
+                        "shear": [
+                            8.11,
+                            8.5,
+                            8.79
+                        ],
+                        "grain": [
+                            0.41,
+                            0.4,
+                            0.4
+                        ],
+                        "batteryLevelBefore": 0.3797464074632269,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 15,
+                        "measurements": 3,
+                        "normOffsetX": 837,
+                        "normOffsetY": 279.09375,
+                        "moisture": [
+                            12.87,
+                            13.46,
+                            12.86
+                        ],
+                        "shear": [
+                            8.06,
+                            7.66,
+                            7.51
+                        ],
+                        "grain": [
+                            0.47,
+                            0.45,
+                            0.47
+                        ],
+                        "batteryLevelBefore": 0.408985789472289,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 4,
+                        "measurements": 2,
+                        "normOffsetX": 373,
+                        "normOffsetY": 91.09375,
+                        "moisture": [
+                            5.05,
+                            5.14
+                        ],
+                        "shear": [
+                            9.2,
+                            9.67
+                        ],
+                        "grain": [
+                            0.39,
+                            0.37
+                        ],
+                        "batteryLevelBefore": 0.4420775693736696,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 5,
+                    "alternativeHypothesis2": 1
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 2,
+                    "alternativeHypothesis2": 4
+                }
+            },
+            {
+                "type": "planned",
+                "number": 5,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 0,
+                        "measurements": 2,
+                        "normOffsetX": 231,
+                        "normOffsetY": 70.09375,
+                        "moisture": [
+                            0.41,
+                            0.12
+                        ],
+                        "shear": [
+                            1.52,
+                            2.11
+                        ],
+                        "grain": [
+                            0.41,
+                            0.44
+                        ],
+                        "batteryLevelBefore": 0.5817434988576098,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 7,
+                        "measurements": 2,
+                        "normOffsetX": 511,
+                        "normOffsetY": 122.09375,
+                        "moisture": [
+                            1.63,
+                            1.69
+                        ],
+                        "shear": [
+                            3.5,
+                            4.25
+                        ],
+                        "grain": [
+                            0.5,
+                            0.49
+                        ],
+                        "batteryLevelBefore": 0.5917434988576098,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 15,
+                        "measurements": 3,
+                        "normOffsetX": 837,
+                        "normOffsetY": 279.09375,
+                        "moisture": [
+                            6.89,
+                            6.98,
+                            6.78
+                        ],
+                        "shear": [
+                            8.75,
+                            8.72,
+                            8.99
+                        ],
+                        "grain": [
+                            0.6,
+                            0.59,
+                            0.61
+                        ],
+                        "batteryLevelBefore": 0.6159828808666719,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 4,
+                        "measurements": 2,
+                        "normOffsetX": 373,
+                        "normOffsetY": 91.09375,
+                        "moisture": [
+                            -0.07,
+                            0.7
+                        ],
+                        "shear": [
+                            2.13,
+                            2.13
+                        ],
+                        "grain": [
+                            0.46,
+                            0.47
+                        ],
+                        "batteryLevelBefore": 0.6490746607680525,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "deviated",
+                        "index": 11,
+                        "measurements": 2,
+                        "normOffsetX": 682.0132790747483,
+                        "normOffsetY": 189.20368387234953,
+                        "moisture": [
+                            4.27,
+                            4.52
+                        ],
+                        "shear": [
+                            10.07,
+                            10.26
+                        ],
+                        "grain": [
+                            0.57,
+                            0.54
+                        ],
+                        "batteryLevelBefore": 0.6841066403142251,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 5,
+                    "alternativeHypothesis2": 0
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 3,
+                    "alternativeHypothesis2": 3
+                }
+            },
+            {
+                "type": "planned",
+                "number": 14,
+                "samples": [
+                    {
+                        "type": "planned",
+                        "index": 0,
+                        "measurements": 2,
+                        "normOffsetX": 231,
+                        "normOffsetY": 70.09375,
+                        "moisture": [
+                            0.7,
+                            0.62
+                        ],
+                        "shear": [
+                            1.68,
+                            2.23
+                        ],
+                        "grain": [
+                            0.46,
+                            0.46
+                        ],
+                        "batteryLevelBefore": 0.7550028283628187,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 7,
+                        "measurements": 2,
+                        "normOffsetX": 511,
+                        "normOffsetY": 122.09375,
+                        "moisture": [
+                            4.18,
+                            4.13
+                        ],
+                        "shear": [
+                            9.43,
+                            9.69
+                        ],
+                        "grain": [
+                            0.56,
+                            0.58
+                        ],
+                        "batteryLevelBefore": 0.7650028283628187,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 15,
+                        "measurements": 3,
+                        "normOffsetX": 837,
+                        "normOffsetY": 279.09375,
+                        "moisture": [
+                            10.3,
+                            10.34,
+                            10.25
+                        ],
+                        "shear": [
+                            7.84,
+                            7.89,
+                            7.65
+                        ],
+                        "grain": [
+                            0.62,
+                            0.68,
+                            0.67
+                        ],
+                        "batteryLevelBefore": 0.7892422103718808,
+                        "batteryWarningShown": false
+                    },
+                    {
+                        "type": "planned",
+                        "index": 4,
+                        "measurements": 2,
+                        "normOffsetX": 373,
+                        "normOffsetY": 91.09375,
+                        "moisture": [
+                            2.52,
+                            2.32
+                        ],
+                        "shear": [
+                            6.4,
+                            6.53
+                        ],
+                        "grain": [
+                            0.53,
+                            0.5
+                        ],
+                        "batteryLevelBefore": 0.8223339902732615,
+                        "batteryWarningShown": false
+                    }
+                ],
+                "localHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 6,
+                    "alternativeHypothesis2": 0
+                },
+                "globalHypotheses": {
+                    "nullHypothesis": 6,
+                    "alternativeHypothesis1": 3,
+                    "alternativeHypothesis2": 3
+                }
+            }
+        ]
+    },
+    "finalHypotheses": {
+        "localHypothesis": {
+            "nullHypothesis": 6,
+            "alternativeHypothesis1": 6,
+            "alternativeHypothesis2": 0
+        },
+        "globalHypothesis": {
+            "nullHypothesis": 6,
+            "alternativeHypothesis1": 3,
+            "alternativeHypothesis2": 3
+        }
+    },
+    "surveyResponses": [
+        {
+            "id": "0-1",
+            "text": "Why did you select the particular number of measurements per location that you did?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "0-1.1.0",
+            "text": "Which of the following best describes your reasoning?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "0-2",
+            "text": "Why did you select the particular measurement locations on each dune transect that you did?",
+            "type": "MultipleChoice",
+            "value": "1"
+        },
+        {
+            "id": "0-2.1.0",
+            "text": "Which of the following best describes your reasoning?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "0-2.1.0.0.1",
+            "text": "The location spacing strategy was selected and distributed based on the expectation that moisture increased linearly over the dune.",
+            "type": "Ranked",
+            "value": "5"
+        },
+        {
+            "id": "0-2.1.0.0.2",
+            "text": "The location spacing strategy was selected and distributed to capture the most likely point of saturation.",
+            "type": "Ranked",
+            "value": "4"
+        },
+        {
+            "id": "1-1",
+            "text": "Why did you select the particular dune transects (within the field area) that you did?",
+            "type": "Text",
+            "value": "I wanted to have them within the same line because of the initial diagram shown with consecutive dunes hiding behind each other in the wind direction."
+        },
+        {
+            "id": "1-2",
+            "text": "Did you ever adapt your strategy, why or why not?",
+            "type": "Text",
+            "value": "I adapted my strategy to take more measurements for transects that appeared to show a different trend than previously. After adapting my strategy, I noted that most of the trends I expected were shown."
+        },
+        {
+            "id": "1-3",
+            "text": "Did you use the template feature during initial strategy selection? If so, did you find it useful?",
+            "type": "Text",
+            "value": "I did. It was very useful as most tests were in the same format."
+        },
+        {
+            "id": "1-4",
+            "text": "Did you use the 'Update Charts Options' feature during data visualization? If so, did you have any preferences?",
+            "type": "Text",
+            "value": "No."
+        },
+        {
+            "id": "1-5",
+            "text": "Do you think this web-based scenario has pedagogical value? How so? If not, what would need to be changed to make it useful for geoeducation?",
+            "type": "Text",
+            "value": "I think this has the potential to be useful for geoeducation. I feel that if I came into the scenario understanding more about this topic, I would be able to more confidently answer the question about the hypotheses."
+        },
+        {
+            "id": "1-6",
+            "text": "Was this task too difficult?",
+            "type": "Text",
+            "value": "No"
+        },
+        {
+            "id": "1-7",
+            "text": " Is there anything else you want to tell us?",
+            "type": "Text",
+            "value": "When it came to grain size, I was confused because I'm not sure I noticed any of the trends that were listed in the hypotheses. This could be because I misunderstood them, but I was not able to be confident in any of them."
+        },
+        {
+            "id": "2-1",
+            "text": "What is your age?",
+            "type": "Text",
+            "value": "18"
+        },
+        {
+            "id": "2-2",
+            "text": "What is your gender?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "2-3",
+            "text": "Have you completed a bachelor's degree?",
+            "type": "MultipleChoice",
+            "value": "1"
+        },
+        {
+            "id": "2-4",
+            "text": "How many years of practice do you have, post bachelor's degree?",
+            "type": "Text",
+            "value": "0"
+        },
+        {
+            "id": "2-5",
+            "text": "What is your discipline?",
+            "type": "Text",
+            "value": "Computer Science"
+        },
+        {
+            "id": "2-6",
+            "text": "How would you describe your specialization, if any?",
+            "type": "Text",
+            "value": "N/A"
+        },
+        {
+            "id": "2-7",
+            "text": "Are you familiar with any of the features of this decision making scenario? Have you ever collected data at White Sands National Monument before or investigated a similar research question?",
+            "type": "MultipleChoice",
+            "value": "1"
+        },
+        {
+            "id": "2-8",
+            "text": "Are you in academia or industry?",
+            "type": "MultipleChoice",
+            "value": "0"
+        },
+        {
+            "id": "2-8.0.0",
+            "text": "Which best describes your current position?",
+            "type": "MultipleChoice",
+            "value": "0"
+        }
+    ]
+}

@@ -74,6 +74,7 @@ class rule_state_machine:
     def handle_information_coverage(self):
         sample_state = self.env.get_state()
         self.information_matrix = np.zeros(22)     #information matrix in location
+        self.variable_coverage = np.zeros(20)
         for i in range(len(sample_state[0])):
             
             scale = 0.1 * sample_state[1][i] + 1
@@ -83,6 +84,28 @@ class rule_state_machine:
             # print(gauss(locs, scale))
             # self.plot_line('cool green', np.linspace(1,22,22), gauss(locs, scale), 'test'+str(i))
         # print("coverage_matrix: ", self.information_matrix)
+        mm, erodi = self.env.get_data_state()
+        mm_mean = np.mean(mm, axis=0)
+        mm_nonzero = mm[np.nonzero(mm)]
+        start = -10  # 区间左端点
+        number_of_interval = 20  # 区间个数
+        length = 1  # 区间长度
+        intervals = {'{}~{}'.format(length*x+start, length*(x+1)+start): 0 for x in range(number_of_interval)}  # 生成区间
+        result = interval_statistics(mm_nonzero, intervals)
+        result_number = np.linspace(-10, 9, 20)
+        variable_information = np.zeros(20)
+        for i in range(len(result_number)):
+            single_converage = gauss_variable(result_number[i] +0.5, result[i])
+            variable_information += single_converage
+        loc_variable_information = []
+        for i in mm_mean:
+            interval_i = int(i)
+            loc_variable_information.append(variable_information[interval_i])
+        self.loc_variable_coverage = np.zeros(22)
+        for i in range(len(sample_state[0])):
+            scale = loc_variable_information[i]
+            locs =  sample_state[0][i] + 1
+            self.loc_variable_coverage += gauss(locs, scale)
 
     def handle_information_accuracy(self):
         accuracy_matrix = []
@@ -140,11 +163,11 @@ class rule_state_machine:
                                     np.size(nonzero_data_mean)))
         # print(rmse_data)
         self.rmse_data = rmse_data
-        plt.plot(xd, fit_curve)
-        plt.plot(data_index, data_mean, "o")
-        plt.plot(data_index, fitting_results, "*")
-        #plt.plot(data_index, fitting_error, "+")
-        plt.show()
+        # plt.plot(xd, fit_curve)
+        # plt.plot(data_index, data_mean, "o")
+        # plt.plot(data_index, fitting_results, "*")
+        # #plt.plot(data_index, fitting_error, "+")
+        # plt.show()
         # plt.savefig('123.png')
 
 
@@ -257,7 +280,22 @@ class rule_state_machine:
         #注意.show()操作后会默认打开一个空白fig,此时保存,容易出现保存的为纯白背景,所以请在show()操作前保存fig.
         # plt.show()
 
-
+def interval_statistics(data, intervals):
+    if len(data) == 0:
+        return
+    for num in data:
+        for interval in intervals:
+            lr = tuple(interval.split('~'))
+            left, right = float(lr[0]), float(lr[1])
+            if left <= num <= right:
+                intervals[interval] += 1
+    results = []
+    for key, value in intervals.items():
+        print("%10s" % key, end='')  # 借助 end=''可以不换行
+        print("%10s" % value, end='')  # "%10s" 右对齐
+        print('%16s' % '{:.3%}'.format(value * 1.0 / len(data)))
+        results.append(value)
+    return results
 
 
 def piecewise_linear(x, x0, y0, k1):
@@ -268,7 +306,8 @@ def piecewise_linear(x, x0, y0, k1):
 
 def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
     return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
-
+def gauss_variable(mean, scale, x=np.linspace(-10,9,20), sigma=1):
+    return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
 if __name__ == "__main__":
     DM = rule_state_machine()
     DM.choose_initial_template()
