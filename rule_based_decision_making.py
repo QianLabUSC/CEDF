@@ -73,10 +73,20 @@ class rule_state_machine:
 
     def handle_information_coverage(self):
         sample_state = self.env.get_state()
+        sample_loc = np.array(sample_state[0])
+        sample_number = np.array(sample_state[1])
+        sort_index = np.argsort(sample_loc)
+        sample_loc = sample_loc[sort_index]
+        sample_number = sample_number[sort_index]
+        unique_index = np.unique(sample_loc, return_index = True)
+        sample_loc = sample_loc[unique_index[1]]
+        sample_number = sample_number[unique_index[1]]
+        sample_state = [sample_loc, sample_number]
+
+        print(sample_state)     
         self.information_matrix = np.zeros(22)     #information matrix in location
         self.variable_coverage = np.zeros(20)
         for i in range(len(sample_state[0])):
-            
             scale = 0.1 * sample_state[1][i] + 1
             locs =  sample_state[0][i] + 1
             self.information_matrix += gauss(locs, scale)
@@ -87,25 +97,36 @@ class rule_state_machine:
         mm, erodi = self.env.get_data_state()
         mm_mean = np.mean(mm, axis=0)
         mm_nonzero = mm[np.nonzero(mm)]
-        start = -10  # 区间左端点
+        mm_mean_nonzero = mm_mean[np.nonzero(mm_mean)]
+        start = 0  # 区间左端点
         number_of_interval = 20  # 区间个数
         length = 1  # 区间长度
         intervals = {'{}~{}'.format(length*x+start, length*(x+1)+start): 0 for x in range(number_of_interval)}  # 生成区间
-        result = interval_statistics(mm_nonzero, intervals)
-        result_number = np.linspace(-10, 9, 20)
+        result = np.array(interval_statistics(mm_nonzero, intervals))
+        self.variable_coverage = len(result[(np.nonzero(result))])/len(result)
+        result_number = np.linspace(0, 19, 20)
         variable_information = np.zeros(20)
         for i in range(len(result_number)):
             single_converage = gauss_variable(result_number[i] +0.5, result[i])
             variable_information += single_converage
-        loc_variable_information = []
-        for i in mm_mean:
-            interval_i = int(i)
-            loc_variable_information.append(variable_information[interval_i])
-        self.loc_variable_coverage = np.zeros(22)
-        for i in range(len(sample_state[0])):
-            scale = loc_variable_information[i]
-            locs =  sample_state[0][i] + 1
-            self.loc_variable_coverage += gauss(locs, scale)
+        # feed the variable coverage into the previous belief
+        self.variable_information = variable_information
+        
+        # print(mm_mean_nonzero)
+        # print(sample_state[0])
+        # p , e = optimize.curve_fit(piecewise_linear_moisture, np.array(sample_state[0])+1, mm_mean_nonzero)
+        # xloc = np.linspace(1, 22, 22)
+        # xmoisture = piecewise_linear_moisture(xloc, *p)
+        # self.mapping_value = []
+        # for emoisture in xmoisture:
+        #     self.mapping_value.append(variable_information[int(emoisture)])
+
+        # print(variable_information)
+        # print(self.mapping_value)
+        # plt.plot(xloc,xmoisture )
+        
+        # plt.show()
+
 
     def handle_information_accuracy(self):
         accuracy_matrix = []
@@ -137,7 +158,7 @@ class rule_state_machine:
 
     def handle_feature_point_detection(self):
         loc_state = self.env.get_state()[0]
-        print(self.env.get_state())
+        #print(self.env.get_state())
         self.fitting_error_matrix = np.zeros(22)
         mm, erodi = self.env.get_data_state()
         mm_mean = np.mean(mm, axis=0)
@@ -291,9 +312,9 @@ def interval_statistics(data, intervals):
                 intervals[interval] += 1
     results = []
     for key, value in intervals.items():
-        print("%10s" % key, end='')  # 借助 end=''可以不换行
-        print("%10s" % value, end='')  # "%10s" 右对齐
-        print('%16s' % '{:.3%}'.format(value * 1.0 / len(data)))
+        #print("%10s" % key, end='')  # 借助 end=''可以不换行
+        # print("%10s" % value, end='')  # "%10s" 右对齐
+        #print('%16s' % '{:.3%}'.format(value * 1.0 / len(data)))
         results.append(value)
     return results
 
@@ -303,10 +324,14 @@ def piecewise_linear(x, x0, y0, k1):
 	# x>=x0 ⇒ lambda x: k2*x + y0 - k2*x0
     return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
                                    lambda x: y0])
-
+def piecewise_linear_moisture(x, x0, y0, k1, k2):
+	# x<x0 ⇒ lambda x: k1*x + y0 - k1*x0
+	# x>=x0 ⇒ lambda x: k2*x + y0 - k2*x0
+    return np.piecewise(x, [x < x0, x >= x0], [lambda x:k1*x + y0-k1*x0, 
+                                   lambda x: k2*x + y0 - k2*x0])
 def gauss(mean, scale, x=np.linspace(1,22,22), sigma=1):
     return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
-def gauss_variable(mean, scale, x=np.linspace(-10,9,20), sigma=1):
+def gauss_variable(mean, scale, x=np.linspace(0,19,20), sigma=1):
     return scale * np.exp(-np.square(x - mean) / (2 * sigma ** 2))
 if __name__ == "__main__":
     DM = rule_state_machine()

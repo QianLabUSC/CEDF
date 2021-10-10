@@ -128,14 +128,13 @@ for i in range(len(user_list)):
                 break
             elif(json_obj['rows'][j]['type'] == "discarded"):
                 continue
-        print(deviate_length)
+        #print(deviate_length)
         data_version = json_obj['isAlternativeHypo']      # 0-the right 1-the wrong hypo
         user_conclusion = json_obj['concludeQuestions']['support']
         # drop out the non deviate user and step length than 5""
-        if if_deviate and deviate_length >= 5 and ((data_version==1 and user_conclusion == "Yes") or (data_version==0 and user_conclusion=="No")):
-            fig, axs = plt.subplots(2, 1, sharex=True)
-
-
+        if if_deviate and deviate_length >= 5 and ((data_version==1 and user_conclusion == "No")):
+            folder = "hypo11"
+            
             state = [[],[]]
             status = []
             data_x = []
@@ -166,11 +165,11 @@ for i in range(len(user_list)):
             DM.handle_information_accuracy()
             DM.handle_information_coverage()
             DM.information_model()
-            print(inter_count)
+            #print(inter_count)
             if(inter_count >=3):
                 try:
-                    print(count)
-                    print(user_list[i])
+                    # print(count)
+                    #print(user_list[i])
                     DM.handle_feature_point_detection()
                     fitting_error_total = DM.rmse_data
                     abs_discrepancy = normalization(np.absolute(DM.fitting_error_matrix))
@@ -195,7 +194,7 @@ for i in range(len(user_list)):
 
 
             information_converage = normalization(DM.information_matrix)
-            variable_coverage = normalization(DM.loc_variable_coverage)
+            variable_coverage = normalization(DM.mapping_value)
             confidence = beliefs_level[json_obj['rows'][j]['roc']]
             '''
             implement importance level detection here
@@ -210,8 +209,7 @@ for i in range(len(user_list)):
             feature_selection = DM.saturation_selection
             # print('123123123', feature_selection)
             # select the interest area based on variable area.
-            variable_selection = np.argwhere(variable_coverage < 0.4)
-            variable_selection = variable_selection.reshape(1, -1)[0] + 1
+            variable_loc_selection = np.argwhere(variable_coverage < 0.4)
 
 
             # # statistic the deviate_state_0 (whether in coverage selection and discrepancy selection)
@@ -224,7 +222,7 @@ for i in range(len(user_list)):
                 both_selection_number[confidence] += 1
             if (deviate_state_0 in feature_selection):
                 feature_selection_number[confidence] += 1
-            if (deviate_state_0 in variable_selection):
+            if (deviate_state_0 in variable_loc_selection):
                 variable_selection_number[confidence] += 1
 
             # # statistic the deviate_state_0 (whether in coverage selection and discrepancy selection)
@@ -250,15 +248,14 @@ for i in range(len(user_list)):
             #     feature_selection_number[confidence] += 1
 
             x = np.linspace(1,22,22)
-            axs[0].plot(x, abs_discrepancy, marker="s", markersize="20", linewidth=3, label="distribut_discrepancy", c="pink")
-            axs[0].plot(x, discrepany_matrix, marker="s", markersize="20", linewidth=3, label="discrepancy", c="orangered")
+
+
+            #plot Information spatial coverage 
+
+            fig, axs = plt.subplots(2, 1, sharex=True)
             axs[0].plot(x, information_converage, marker="o", markersize="20", linewidth=3, label="coverage", c="lime")
-            axs[0].plot(x, variable_coverage, marker="o", markersize="20", linewidth=3, label="coverage", c="fuchsia")
+           
             axs[0].plot(information_selection, -0.13 * np.ones(len(information_selection)),marker='H',markersize="20", c="blue")
-            axs[0].plot(discrepancy_selection, -0.26 * np.ones(len(discrepancy_selection)),marker='H',markersize="20", c="black")
-            axs[0].plot(feature_selection, -0.39 * np.ones(len(feature_selection)),marker='H',markersize="20", c="yellow")
-            axs[0].plot(variable_selection, -0.52 * np.ones(len(variable_selection)),marker='H',markersize="20", c="brown")
-            # axs[0].legend()
             axs[0].set_xlabel('loc')
             axs[0].set_ylabel('value')
             axs[0].set_xticks(range(0,23,1))
@@ -270,10 +267,10 @@ for i in range(len(user_list)):
             state[1].append(deviate_state_1)
             DM.env.set_state(state)
             mm, erodi = DM.env.get_data_state()
-            print(erodi)
+            #print(erodi)
             for kk in range(mm.shape[1]):
                 erodi_nonzero = erodi[:,kk][np.nonzero(erodi[:,kk])]
-                print(erodi_nonzero)
+                #print(erodi_nonzero)
                 axs[1].scatter(kk*np.ones(len(erodi_nonzero)) + 1, erodi_nonzero, marker='D',s=160, label="sample", c="lime")
             erodi_deviate_nonzero = erodi[:,deviate_state_0][np.nonzero(erodi[:,deviate_state_0])]
             axs[1].scatter(deviate_state_0*np.ones(len(erodi_deviate_nonzero)) + 1, erodi_deviate_nonzero, marker='D',s=160, label="sample", c="orangered")
@@ -281,7 +278,96 @@ for i in range(len(user_list)):
             axs[1].set_ylabel('erodi')
             axs[1].xaxis.set_major_locator(MultipleLocator(1))
             axs[1].yaxis.set_major_locator(MultipleLocator(2))
-            plt.savefig('./deviate_analysis/wrong/user'+str(i+1))
+            plt.savefig('./deviate_analysis/hypo11/user'+str(i+1)+"ISC")
+
+            # plot Information variable coverage 
+            fig, axs = plt.subplots(2, 1, sharex=True)
+            axs[0].plot(x, variable_coverage, marker="o", markersize="20", linewidth=3, label="coverage", c="lime")
+           
+            axs[0].plot(variable_loc_selection, -0.13 * np.ones(len(variable_loc_selection)),marker='H',markersize="20", c="blue")
+            axs[0].set_xlabel('loc')
+            axs[0].set_ylabel('value')
+            axs[0].set_xticks(range(0,23,1))
+            axs[0].plot(x, -0.7 * np.ones(22), marker='H',markersize="20", label="sample", c="grey")
+            axs[0].plot( [j + 1 for j in state[0]], -0.7 * np.ones(len(state[0])), marker='H',markersize="20", label="sample", c="lime")
+            axs[0].plot(deviate_state_0 + 1, -0.7, marker='H',markersize="20", label="sample", c="orangered")
+            axs[0].set_title(user_list[i] + 'confidence' + str(confidence), fontsize=40)
+            state[0].append(deviate_state_0)
+            state[1].append(deviate_state_1)
+            DM.env.set_state(state)
+            mm, erodi = DM.env.get_data_state()
+            #print(erodi)
+            for kk in range(mm.shape[1]):
+                erodi_nonzero = erodi[:,kk][np.nonzero(erodi[:,kk])]
+                #print(erodi_nonzero)
+                axs[1].scatter(kk*np.ones(len(erodi_nonzero)) + 1, erodi_nonzero, marker='D',s=160, label="sample", c="lime")
+            erodi_deviate_nonzero = erodi[:,deviate_state_0][np.nonzero(erodi[:,deviate_state_0])]
+            axs[1].scatter(deviate_state_0*np.ones(len(erodi_deviate_nonzero)) + 1, erodi_deviate_nonzero, marker='D',s=160, label="sample", c="orangered")
+            axs[1].set_xlabel('loc')
+            axs[1].set_ylabel('erodi')
+            axs[1].xaxis.set_major_locator(MultipleLocator(1))
+            axs[1].yaxis.set_major_locator(MultipleLocator(2))
+            plt.savefig('./deviate_analysis/hypo11/user'+str(i+1)+"IVC")
+
+             # plot Discrepancy 
+            fig, axs = plt.subplots(2, 1, sharex=True)
+            axs[0].plot(x, abs_discrepancy, marker="s", markersize="20", linewidth=3, label="distribut_discrepancy", c="pink")
+            axs[0].plot(x, discrepany_matrix, marker="s", markersize="20", linewidth=3, label="discrepancy", c="orangered")
+            axs[0].plot(discrepancy_selection, -0.26 * np.ones(len(discrepancy_selection)),marker='H',markersize="20", c="black")
+            axs[0].set_xlabel('loc')
+            axs[0].set_ylabel('value')
+            axs[0].set_xticks(range(0,23,1))
+            axs[0].plot(x, -0.7 * np.ones(22), marker='H',markersize="20", label="sample", c="grey")
+            axs[0].plot( [j + 1 for j in state[0]], -0.7 * np.ones(len(state[0])), marker='H',markersize="20", label="sample", c="lime")
+            axs[0].plot(deviate_state_0 + 1, -0.7, marker='H',markersize="20", label="sample", c="orangered")
+            axs[0].set_title(user_list[i] + 'confidence' + str(confidence), fontsize=40)
+            state[0].append(deviate_state_0)
+            state[1].append(deviate_state_1)
+            DM.env.set_state(state)
+            mm, erodi = DM.env.get_data_state()
+            #print(erodi)
+            for kk in range(mm.shape[1]):
+                erodi_nonzero = erodi[:,kk][np.nonzero(erodi[:,kk])]
+                #print(erodi_nonzero)
+                axs[1].scatter(kk*np.ones(len(erodi_nonzero)) + 1, erodi_nonzero, marker='D',s=160, label="sample", c="lime")
+            erodi_deviate_nonzero = erodi[:,deviate_state_0][np.nonzero(erodi[:,deviate_state_0])]
+            axs[1].scatter(deviate_state_0*np.ones(len(erodi_deviate_nonzero)) + 1, erodi_deviate_nonzero, marker='D',s=160, label="sample", c="orangered")
+            axs[1].set_xlabel('loc')
+            axs[1].set_ylabel('erodi')
+            axs[1].xaxis.set_major_locator(MultipleLocator(1))
+            axs[1].yaxis.set_major_locator(MultipleLocator(2))
+            plt.savefig('./deviate_analysis/hypo11/user'+str(i+1)+"DC")
+
+            # plot Discrepancy 
+            fig, axs = plt.subplots(2, 1, sharex=True)
+            axs[0].plot(feature_selection, -0.39 * np.ones(len(feature_selection)),marker='H',markersize="20", c="yellow")
+            axs[0].set_xlabel('loc')
+            axs[0].set_ylabel('value')
+            axs[0].set_xticks(range(0,23,1))
+            axs[0].plot(x, -0.7 * np.ones(22), marker='H',markersize="20", label="sample", c="grey")
+            axs[0].plot( [j + 1 for j in state[0]], -0.7 * np.ones(len(state[0])), marker='H',markersize="20", label="sample", c="lime")
+            axs[0].plot(deviate_state_0 + 1, -0.7, marker='H',markersize="20", label="sample", c="orangered")
+            axs[0].set_title(user_list[i] + 'confidence' + str(confidence), fontsize=40)
+            state[0].append(deviate_state_0)
+            state[1].append(deviate_state_1)
+            DM.env.set_state(state)
+            mm, erodi = DM.env.get_data_state()
+            #print(erodi)
+            for kk in range(mm.shape[1]):
+                erodi_nonzero = erodi[:,kk][np.nonzero(erodi[:,kk])]
+                #print(erodi_nonzero)
+                axs[1].scatter(kk*np.ones(len(erodi_nonzero)) + 1, erodi_nonzero, marker='D',s=160, label="sample", c="lime")
+            erodi_deviate_nonzero = erodi[:,deviate_state_0][np.nonzero(erodi[:,deviate_state_0])]
+            axs[1].scatter(deviate_state_0*np.ones(len(erodi_deviate_nonzero)) + 1, erodi_deviate_nonzero, marker='D',s=160, label="sample", c="orangered")
+            axs[1].set_xlabel('loc')
+            axs[1].set_ylabel('erodi')
+            axs[1].xaxis.set_major_locator(MultipleLocator(1))
+            axs[1].yaxis.set_major_locator(MultipleLocator(2))
+            plt.savefig('./deviate_analysis/hypo11/user'+str(i+1)+"Feature")
+          
+            
+            
+
 
 xxx = np.linspace(0,0.8,5) 
 discrepancy_data = []
